@@ -1,5 +1,6 @@
 import Foundation
 
+/// Defines single data point value with timestamp
 public struct DataPoint {
     
     public let timestamp : NSDate
@@ -39,7 +40,7 @@ public struct DataPoint {
     }
 }
 
-//MARK: - Equatable implementation
+//MARK: Equatable implementation
 extension DataPoint : Equatable {
 }
 
@@ -47,7 +48,7 @@ public func ==(lhs: DataPoint, rhs: DataPoint) -> Bool {
     return lhs.value == rhs.value
 }
 
-//MARK: - Custom String Convertible implementation
+//MARK: Custom String Convertible implementation
 extension DataPoint : CustomStringConvertible {
     public var description : String {
         let dateFormatter = NSDateFormatter()
@@ -57,7 +58,7 @@ extension DataPoint : CustomStringConvertible {
     }
 }
 
-//MARK: - IntegerLiteral Convertible implementation
+//MARK: IntegerLiteral Convertible implementation
 extension DataPoint : IntegerLiteralConvertible {
     public init(integerLiteral value: Int) {
         self.value = Double(value)
@@ -65,7 +66,7 @@ extension DataPoint : IntegerLiteralConvertible {
     }
 }
 
-//MARK: - FloatLiteralConvertible implementation
+//MARK: FloatLiteralConvertible implementation
 extension DataPoint : FloatLiteralConvertible {
     public init(floatLiteral value: Double) {
         self.value = value
@@ -73,6 +74,7 @@ extension DataPoint : FloatLiteralConvertible {
     }
 }
 
+//MARK: Comparable implementation
 extension DataPoint : Comparable {}
 
 public func <(lhs: DataPoint, rhs: DataPoint) -> Bool {

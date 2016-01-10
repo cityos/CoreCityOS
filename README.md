@@ -1,3 +1,5 @@
+![https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg](https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg)
+
 # CoreCityOS
 Core iOS services used for building and shipping iOS applications
 
