@@ -1,6 +1,6 @@
 import Foundation
 
-public struct DataPoint : DataPointType {
+public struct DataPoint {
     
     public let timestamp : NSDate
     public let value : Double
