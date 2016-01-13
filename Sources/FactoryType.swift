@@ -8,3 +8,9 @@
 // See https://cityos.io/ios/LICENCE.txt for license information
 //
 //===----------------------------------------------------------------------===//
+
+public protocol FactoryType {
+    
+    /// Returns singleton Factory object
+    static var sharedInstance : Self { get }
+}

@@ -8,8 +8,9 @@
 // See https://cityos.io/ios/LICENCE.txt for license information
 //
 //===----------------------------------------------------------------------===//
-
-import Foundation
+import class Foundation.NSDate
+import class Foundation.NSDateFormatter
+import typealias Foundation.NSTimeInterval
 
 /// Defines single data point value with timestamp
 public struct DataPoint<T> {
@@ -53,16 +54,6 @@ public struct DataPoint<T> {
     }
 }
 
-//MARK: Equatable implementation
-extension DataPoint : Equatable {
-}
-
-
-public func ==<T>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
-    return lhs.value == rhs.value {
-        return true
-    }
-}
 
 //MARK: Custom String Convertible implementation
 extension DataPoint : CustomStringConvertible {
@@ -72,23 +63,4 @@ extension DataPoint : CustomStringConvertible {
         let stamp = dateFormatter.stringFromDate(self.timestamp)
         return "[\(stamp) - \(self.value)]"
     }
-}
-
-//MARK: Comparable implementation
-extension DataPoint : Comparable {}
-
-public func <(lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value < rhs.value
-}
-
-public func <=(lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value <= rhs.value
-}
-
-public func >(lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value > rhs.value
-}
-
-public func >=(lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value >= rhs.value
 }
