@@ -1,10 +1,23 @@
+//===----------------------------------------------------------------------===//
+//
+// This source file is part of the cityos.io CoreCityOS open source project
+//
+// Copyright (c) 2016 CityOS LLC
+// Licensed under Apache License v2.0
+//
+// See https://cityos.io/ios/LICENCE.txt for license information
+//
+//===----------------------------------------------------------------------===//
+
 import Foundation
 
 /// Defines single data point value with timestamp
-public struct DataPoint {
+public struct DataPoint<T> {
+    
+    public typealias DataPointValue = T
     
     public let timestamp : NSDate
-    public let value : Double
+    public let value : DataPointValue
     
     /**
      Initializes data reading with value and time stamp
@@ -12,7 +25,7 @@ public struct DataPoint {
      - parameter value: Data reading value
      - parameter timeStamp NSDate value
      */
-    public init(value: Double, timeStamp stamp: NSDate) {
+    public init(value: DataPointValue, timeStamp stamp: NSDate) {
         self.value = value
         self.timestamp = stamp
     }
@@ -23,7 +36,7 @@ public struct DataPoint {
      - parameter value: Data reading value
      - parameter timeStamp unix time stamp
      */
-    public init(value: Double, unixTimeStamp stamp: NSTimeInterval) {
+    public init(value: DataPointValue, unixTimeStamp stamp: NSTimeInterval) {
         self.value = value
         self.timestamp = NSDate(timeIntervalSince1970: stamp)
     }
@@ -34,7 +47,7 @@ public struct DataPoint {
      
      - parameter value: Data reading value
      */
-    public init(_ value: Double) {
+    public init(_ value: DataPointValue) {
         self.value = value
         self.timestamp = NSDate()
     }
@@ -44,8 +57,11 @@ public struct DataPoint {
 extension DataPoint : Equatable {
 }
 
-public func ==(lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value == rhs.value
+
+public func ==<T>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value == rhs.value {
+        return true
+    }
 }
 
 //MARK: Custom String Convertible implementation
@@ -55,22 +71,6 @@ extension DataPoint : CustomStringConvertible {
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a"
         let stamp = dateFormatter.stringFromDate(self.timestamp)
         return "[\(stamp) - \(self.value)]"
-    }
-}
-
-//MARK: IntegerLiteral Convertible implementation
-extension DataPoint : IntegerLiteralConvertible {
-    public init(integerLiteral value: Int) {
-        self.value = Double(value)
-        self.timestamp = NSDate()
-    }
-}
-
-//MARK: FloatLiteralConvertible implementation
-extension DataPoint : FloatLiteralConvertible {
-    public init(floatLiteral value: Double) {
-        self.value = value
-        self.timestamp = NSDate()
     }
 }
 
