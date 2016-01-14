@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
 		517406B51C426BC400815AF0 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		517406B61C426BC400815AF0 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
 		517406B71C426BC400815AF0 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B01C426BC400815AF0 /* DeviceType.swift */; };
 		517406B81C426BC400815AF0 /* FactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B11C426BC400815AF0 /* FactoryType.swift */; };
 		517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
 		517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
-		517406C31C426DF200815AF0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406C21C426DF200815AF0 /* Tests.swift */; };
+		517406C31C426DF200815AF0 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406C21C426DF200815AF0 /* DataPointTests.swift */; };
 		517406C51C426DF200815AF0 /* CoreCityOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174069D1C426B0A00815AF0 /* CoreCityOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5171E6ED1C4702480039D43C /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		5174069D1C426B0A00815AF0 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		517406A91C426B2D00815AF0 /* CoreCityOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCityOS.h; sourceTree = "<group>"; };
 		517406AA1C426B2D00815AF0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 		517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataCollectionType.swift; sourceTree = "<group>"; };
 		517406B31C426BC400815AF0 /* LiveDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataType.swift; sourceTree = "<group>"; };
 		517406C01C426DF200815AF0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		517406C21C426DF200815AF0 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		517406C21C426DF200815AF0 /* DataPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointTests.swift; sourceTree = "<group>"; };
 		517406C41C426DF200815AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				517406AA1C426B2D00815AF0 /* Info.plist */,
 				517406AE1C426BC400815AF0 /* DataPoint.swift */,
 				517406AF1C426BC400815AF0 /* DataType.swift */,
+				5171E6ED1C4702480039D43C /* DeviceData.swift */,
 				517406B01C426BC400815AF0 /* DeviceType.swift */,
 				517406B11C426BC400815AF0 /* FactoryType.swift */,
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
@@ -97,7 +100,7 @@
 		517406C11C426DF200815AF0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				517406C21C426DF200815AF0 /* Tests.swift */,
+				517406C21C426DF200815AF0 /* DataPointTests.swift */,
 				517406C41C426DF200815AF0 /* Info.plist */,
 			);
 			path = Tests;
@@ -213,6 +216,7 @@
 				517406B51C426BC400815AF0 /* DataPoint.swift in Sources */,
 				517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */,
 				517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */,
+				5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */,
 				517406B71C426BC400815AF0 /* DeviceType.swift in Sources */,
 				517406B81C426BC400815AF0 /* FactoryType.swift in Sources */,
 				517406B61C426BC400815AF0 /* DataType.swift in Sources */,
@@ -223,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				517406C31C426DF200815AF0 /* Tests.swift in Sources */,
+				517406C31C426DF200815AF0 /* DataPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 				517406CA1C426DF200815AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

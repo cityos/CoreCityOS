@@ -13,12 +13,15 @@ import class Foundation.NSDateFormatter
 import typealias Foundation.NSTimeInterval
 
 /// Defines single data point value with timestamp
-public struct DataPoint<T> {
+public struct DataPoint<T : Equatable> {
     
     public typealias DataPointValue = T
     
+    /// Creation date timestamp
     public let timestamp : NSDate
-    public let value : DataPointValue
+    
+    /// Data reading value
+    public var value : DataPointValue
     
     /**
      Initializes data reading with value and time stamp
@@ -48,7 +51,7 @@ public struct DataPoint<T> {
      
      - parameter value: Data reading value
      */
-    public init(_ value: DataPointValue) {
+    public init(value: DataPointValue) {
         self.value = value
         self.timestamp = NSDate()
     }
@@ -64,3 +67,26 @@ extension DataPoint : CustomStringConvertible {
         return "[\(stamp) - \(self.value)]"
     }
 }
+
+// Define == operator for Equatable types
+public func == <T : Equatable>(lhs: DataPoint<T>, rhs:DataPoint<T>) -> Bool {
+    return lhs.value == rhs.value
+}
+
+// Comparable operator definitions
+public func < <T : Comparable>(lhs:DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value < rhs.value
+}
+
+public func <= <T : Comparable>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value <= rhs.value
+}
+
+public func > <T : Comparable>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value > rhs.value
+}
+
+public func >= <T : Comparable>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value >= rhs.value
+}
+
