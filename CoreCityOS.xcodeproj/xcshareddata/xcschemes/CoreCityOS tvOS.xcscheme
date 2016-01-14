@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "514A8F961C482349008EAD30"
-               BuildableName = "CoreCityOS tvOS.framework"
+               BuildableName = "CoreCityOS.framework"
                BlueprintName = "CoreCityOS tvOS"
                ReferencedContainer = "container:CoreCityOS.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "514A8FA71C482692008EAD30"
+               BuildableName = "CoreCityOS tvOS Tests.xctest"
+               BlueprintName = "CoreCityOS tvOS Tests"
+               ReferencedContainer = "container:CoreCityOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "514A8F961C482349008EAD30"
+            BuildableName = "CoreCityOS.framework"
+            BlueprintName = "CoreCityOS tvOS"
+            ReferencedContainer = "container:CoreCityOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "514A8F961C482349008EAD30"
-            BuildableName = "CoreCityOS tvOS.framework"
+            BuildableName = "CoreCityOS.framework"
             BlueprintName = "CoreCityOS tvOS"
             ReferencedContainer = "container:CoreCityOS.xcodeproj">
          </BuildableReference>
@@ -64,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "514A8F961C482349008EAD30"
-            BuildableName = "CoreCityOS tvOS.framework"
+            BuildableName = "CoreCityOS.framework"
             BlueprintName = "CoreCityOS tvOS"
             ReferencedContainer = "container:CoreCityOS.xcodeproj">
          </BuildableReference>

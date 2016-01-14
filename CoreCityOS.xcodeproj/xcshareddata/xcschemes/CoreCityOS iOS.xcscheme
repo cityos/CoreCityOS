@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5174069C1C426B0A00815AF0"
-               BuildableName = "CoreCityOS iOS.framework"
+               BuildableName = "CoreCityOS.framework"
                BlueprintName = "CoreCityOS iOS"
                ReferencedContainer = "container:CoreCityOS.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5174069C1C426B0A00815AF0"
-            BuildableName = "CoreCityOS iOS.framework"
+            BuildableName = "CoreCityOS.framework"
             BlueprintName = "CoreCityOS iOS"
             ReferencedContainer = "container:CoreCityOS.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5174069C1C426B0A00815AF0"
-            BuildableName = "CoreCityOS iOS.framework"
+            BuildableName = "CoreCityOS.framework"
             BlueprintName = "CoreCityOS iOS"
             ReferencedContainer = "container:CoreCityOS.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5174069C1C426B0A00815AF0"
-            BuildableName = "CoreCityOS iOS.framework"
+            BuildableName = "CoreCityOS.framework"
             BlueprintName = "CoreCityOS iOS"
             ReferencedContainer = "container:CoreCityOS.xcodeproj">
          </BuildableReference>

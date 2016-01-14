@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		514A8F9F1C48254E008EAD30 /* CoreCityOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 517406A91C426B2D00815AF0 /* CoreCityOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		514A8FA01C482555008EAD30 /* CoreCityOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 517406A91C426B2D00815AF0 /* CoreCityOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		514A8FAD1C482692008EAD30 /* CoreCityOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514A8F971C482349008EAD30 /* CoreCityOS.framework */; };
+		514A8FB31C48270E008EAD30 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406C21C426DF200815AF0 /* DataPointTests.swift */; };
 		5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
 		517406B51C426BC400815AF0 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		517406B61C426BC400815AF0 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
@@ -18,9 +20,23 @@
 		517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
 		517406C31C426DF200815AF0 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406C21C426DF200815AF0 /* DataPointTests.swift */; };
 		517406C51C426DF200815AF0 /* CoreCityOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5174069D1C426B0A00815AF0 /* CoreCityOS.framework */; };
+		51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
+		51AB74891C4828C600D7C370 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
+		51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
+		51AB748B1C4828CB00D7C370 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B01C426BC400815AF0 /* DeviceType.swift */; };
+		51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B11C426BC400815AF0 /* FactoryType.swift */; };
+		51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
+		51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		514A8FAE1C482692008EAD30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 517406941C426B0A00815AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 514A8F961C482349008EAD30;
+			remoteInfo = "CoreCityOS tvOS";
+		};
 		517406C61C426DF200815AF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 517406941C426B0A00815AF0 /* Project object */;
@@ -33,6 +49,9 @@
 /* Begin PBXFileReference section */
 		514A8F971C482349008EAD30 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		514A8FA21C482592008EAD30 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		514A8FA81C482692008EAD30 /* CoreCityOS tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		514A8FAA1C482692008EAD30 /* CoreCityOS_tvOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCityOS_tvOS_Tests.swift; sourceTree = "<group>"; };
+		514A8FAC1C482692008EAD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5171E6ED1C4702480039D43C /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		5174069D1C426B0A00815AF0 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		517406A91C426B2D00815AF0 /* CoreCityOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCityOS.h; sourceTree = "<group>"; };
@@ -53,6 +72,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514A8FA51C482692008EAD30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514A8FAD1C482692008EAD30 /* CoreCityOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +111,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		514A8FA91C482692008EAD30 /* CoreCityOS tvOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				514A8FAA1C482692008EAD30 /* CoreCityOS_tvOS_Tests.swift */,
+				514A8FAC1C482692008EAD30 /* Info.plist */,
+			);
+			path = "CoreCityOS tvOS Tests";
+			sourceTree = "<group>";
+		};
 		517406931C426B0A00815AF0 = {
 			isa = PBXGroup;
 			children = (
 				517406A81C426B2D00815AF0 /* Sources */,
 				517406C11C426DF200815AF0 /* Tests */,
+				514A8FA91C482692008EAD30 /* CoreCityOS tvOS Tests */,
 				5174069E1C426B0A00815AF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +136,7 @@
 				5174069D1C426B0A00815AF0 /* CoreCityOS.framework */,
 				517406C01C426DF200815AF0 /* CoreCityOS iOS Tests.xctest */,
 				514A8F971C482349008EAD30 /* CoreCityOS.framework */,
+				514A8FA81C482692008EAD30 /* CoreCityOS tvOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +205,24 @@
 			productReference = 514A8F971C482349008EAD30 /* CoreCityOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		514A8FA71C482692008EAD30 /* CoreCityOS tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514A8FB01C482692008EAD30 /* Build configuration list for PBXNativeTarget "CoreCityOS tvOS Tests" */;
+			buildPhases = (
+				514A8FA41C482692008EAD30 /* Sources */,
+				514A8FA51C482692008EAD30 /* Frameworks */,
+				514A8FA61C482692008EAD30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				514A8FAF1C482692008EAD30 /* PBXTargetDependency */,
+			);
+			name = "CoreCityOS tvOS Tests";
+			productName = "CoreCityOS tvOS Tests";
+			productReference = 514A8FA81C482692008EAD30 /* CoreCityOS tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5174069C1C426B0A00815AF0 /* CoreCityOS iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 517406A51C426B0A00815AF0 /* Build configuration list for PBXNativeTarget "CoreCityOS iOS" */;
@@ -216,6 +272,9 @@
 					514A8F961C482349008EAD30 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					514A8FA71C482692008EAD30 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					5174069C1C426B0A00815AF0 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -239,12 +298,20 @@
 				5174069C1C426B0A00815AF0 /* CoreCityOS iOS */,
 				517406BF1C426DF200815AF0 /* CoreCityOS iOS Tests */,
 				514A8F961C482349008EAD30 /* CoreCityOS tvOS */,
+				514A8FA71C482692008EAD30 /* CoreCityOS tvOS Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		514A8F951C482349008EAD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514A8FA61C482692008EAD30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,6 +339,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */,
+				51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */,
+				51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */,
+				51AB748B1C4828CB00D7C370 /* DeviceType.swift in Sources */,
+				51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */,
+				51AB74891C4828C600D7C370 /* DataType.swift in Sources */,
+				51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514A8FA41C482692008EAD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514A8FB31C48270E008EAD30 /* DataPointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +382,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		514A8FAF1C482692008EAD30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 514A8F961C482349008EAD30 /* CoreCityOS tvOS */;
+			targetProxy = 514A8FAE1C482692008EAD30 /* PBXContainerItemProxy */;
+		};
 		517406C71C426DF200815AF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5174069C1C426B0A00815AF0 /* CoreCityOS iOS */;
@@ -323,7 +410,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -342,6 +429,30 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		514A8FB11C482692008EAD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.cityos.CoreCityOS-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		514A8FB21C482692008EAD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.cityos.CoreCityOS-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
@@ -504,6 +615,16 @@
 				514A8F9E1C482349008EAD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514A8FB01C482692008EAD30 /* Build configuration list for PBXNativeTarget "CoreCityOS tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514A8FB11C482692008EAD30 /* Debug */,
+				514A8FB21C482692008EAD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		517406971C426B0A00815AF0 /* Build configuration list for PBXProject "CoreCityOS" */ = {
 			isa = XCConfigurationList;
