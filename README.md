@@ -1,4 +1,5 @@
-![https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg](https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg)
+![https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg](https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg) [![Build Status](https://travis-ci.org/cityos/CoreCityOS.svg?branch=master)](https://travis-ci.org/cityos/CoreCityOS)
+
 # CoreCityOS
 Core iOS services used for building and shipping iOS applications
 
