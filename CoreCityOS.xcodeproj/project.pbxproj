@@ -34,6 +34,8 @@
 		5187818A1C48F71600C8B962 /* LiveDataTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518781891C48F71600C8B962 /* LiveDataTypeTests.swift */; };
 		5187818B1C48F71600C8B962 /* LiveDataTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518781891C48F71600C8B962 /* LiveDataTypeTests.swift */; };
 		5187818C1C48F71600C8B962 /* LiveDataTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518781891C48F71600C8B962 /* LiveDataTypeTests.swift */; };
+		5187818D1C490CA600C8B962 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518781871C48F5C200C8B962 /* LiveData.swift */; };
+		5187818E1C490CA700C8B962 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518781871C48F5C200C8B962 /* LiveData.swift */; };
 		51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		51AB74891C4828C600D7C370 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
 		51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
@@ -476,6 +478,7 @@
 				51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */,
 				51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */,
 				51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */,
+				5187818D1C490CA600C8B962 /* LiveData.swift in Sources */,
 				51AB748B1C4828CB00D7C370 /* DeviceType.swift in Sources */,
 				51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */,
 				51AB74891C4828C600D7C370 /* DataType.swift in Sources */,
@@ -523,6 +526,7 @@
 				5187816E1C48470400C8B962 /* DataPoint.swift in Sources */,
 				518781711C48470E00C8B962 /* DeviceType.swift in Sources */,
 				518781721C48471100C8B962 /* FactoryType.swift in Sources */,
+				5187818E1C490CA700C8B962 /* LiveData.swift in Sources */,
 				518781731C48471400C8B962 /* LiveDataType.swift in Sources */,
 				5187816F1C48470700C8B962 /* DataType.swift in Sources */,
 				518781741C48471700C8B962 /* LiveDataCollectionType.swift in Sources */,
