@@ -6,7 +6,7 @@
 //  Copyright © 2016 CityOS. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for CoreCityOS.
 FOUNDATION_EXPORT double CoreCityOSVersionNumber;
@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double CoreCityOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char CoreCityOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CoreCityOS/PublicHeader.h>
-
-
