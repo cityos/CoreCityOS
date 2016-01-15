@@ -30,6 +30,7 @@
 		518781741C48471700C8B962 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
 		5187817E1C4847E200C8B962 /* CoreCityOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518781641C48467F00C8B962 /* CoreCityOS.framework */; };
 		518781851C48480B00C8B962 /* DataPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406C21C426DF200815AF0 /* DataPointTests.swift */; };
+		518781881C48F5C200C8B962 /* LiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518781871C48F5C200C8B962 /* LiveData.swift */; };
 		51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		51AB74891C4828C600D7C370 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
 		51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
@@ -88,6 +89,7 @@
 		518781791C4847E200C8B962 /* CoreCityOS OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5187817B1C4847E200C8B962 /* CoreCityOS_OSX_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCityOS_OSX_Tests.swift; sourceTree = "<group>"; };
 		5187817D1C4847E200C8B962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				5171E6ED1C4702480039D43C /* DeviceData.swift */,
 				517406B01C426BC400815AF0 /* DeviceType.swift */,
 				517406B11C426BC400815AF0 /* FactoryType.swift */,
+				518781871C48F5C200C8B962 /* LiveData.swift */,
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
 				517406B31C426BC400815AF0 /* LiveDataType.swift */,
 				514A8FA11C482576008EAD30 /* Supporting Files */,
@@ -490,6 +493,7 @@
 				517406B51C426BC400815AF0 /* DataPoint.swift in Sources */,
 				517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */,
 				517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */,
+				518781881C48F5C200C8B962 /* LiveData.swift in Sources */,
 				5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */,
 				517406B71C426BC400815AF0 /* DeviceType.swift in Sources */,
 				517406B81C426BC400815AF0 /* FactoryType.swift in Sources */,
@@ -1028,6 +1032,7 @@
 				5187816B1C48467F00C8B962 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		518781811C4847E200C8B962 /* Build configuration list for PBXNativeTarget "CoreCityOS OSX Tests" */ = {
 			isa = XCConfigurationList;
@@ -1037,6 +1042,7 @@
 				518781841C4847E200C8B962 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

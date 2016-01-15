@@ -8,3 +8,43 @@
 // See https://cityos.io/ios/LICENCE.txt for license information
 //
 //===----------------------------------------------------------------------===//
+
+///Structures conforming live data type can be used to represent live data
+public protocol LiveDataType {
+    
+    typealias DataPointType : Equatable
+    
+    /// JSON key under which data value is stored
+    var jsonKey : String { get }
+    
+    /// Data type with identifier, for example Temperature or Humidity
+    var type : DataType { get }
+    
+    /// Unit identifier, for example % or MpH
+    var unitNotation: String { get }
+    
+    /// Holds all readings for data type
+    var dataPoints : [DataPoint<DataPointType>] { get set }
+}
+
+extension LiveDataType {
+    
+    /// Returns current data point from the `dataPoints` array.
+    /// The newest data point is always the first element in the array
+    public var currentDataPoint : DataPoint<DataPointType>? {
+        return dataPoints.first
+    }
+    
+    /// Insert data point to the `dataPoints` array at index 0.
+    public mutating func addDataPoint(point: DataPoint<DataPointType>) {
+        dataPoints.insert(point, atIndex: 0)
+    }
+}
+
+extension LiveDataType
+{
+    /// Returns full data specifier with value and unit notation, for ex. 3 Mhw
+    func fullDataReadingSpecifier() -> String {
+        return "\(self.currentDataPoint) \(self.unitNotation)"
+    }
+}
