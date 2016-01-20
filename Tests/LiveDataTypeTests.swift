@@ -15,7 +15,7 @@ import XCTest
 class LiveDataTypeTests: XCTestCase {
 
     func testLiveDataAddDataPoints() {
-        var humidity = LiveData<Double>(
+        var humidity = LiveData(
             dataType: .Humidity,
             jsonKey: "hum",
             unitNotation: "%"
@@ -30,7 +30,7 @@ class LiveDataTypeTests: XCTestCase {
     }
     
     func testLiveDataCurrentDataPoint() {
-        var humidity = LiveData<Double>(
+        var humidity = LiveData(
             dataType: .Humidity,
             jsonKey: "hum",
             unitNotation: "%"

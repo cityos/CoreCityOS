@@ -9,8 +9,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-public struct LiveData<T: Equatable> : LiveDataType {
-    public typealias DataPointType = T
+public struct LiveData : LiveDataType {
     
     public var jsonKey : String
     public var type : DataType

@@ -20,11 +20,10 @@ implementations via protocol extensions.
 */
 public protocol LiveDataCollectionType {
     
-    /// Schema id
-    var schemaID : String { get }
+    /// Device data
+    var deviceData : DeviceData { get set }
     
-    var lampID : String { get  set}
-    
+    /// Creation date
     var creationDate : NSDate { get set }
     
     /// All live data readings
