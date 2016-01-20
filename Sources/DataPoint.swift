@@ -13,15 +13,15 @@ import class Foundation.NSDateFormatter
 import typealias Foundation.NSTimeInterval
 
 /// Defines single data point value with timestamp
-public struct DataPoint<T : Equatable> {
+public struct DataPoint {
     
-    public typealias DataPointValue = T
+    public typealias DataPointValue = Double
     
     /// Creation date timestamp
     public let timestamp : NSDate
     
     /// Data reading value
-    public var value : DataPointValue
+    public var value : Double
     
     /**
      Initializes data reading with value and time stamp
@@ -60,33 +60,41 @@ public struct DataPoint<T : Equatable> {
 
 //MARK: Custom String Convertible implementation
 extension DataPoint : CustomStringConvertible {
-    public var description : String {
+    
+    static var dateFormatter : NSDateFormatter {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a"
-        let stamp = dateFormatter.stringFromDate(self.timestamp)
+        return dateFormatter
+    }
+    
+    public var description : String {
+        let stamp = DataPoint.dateFormatter.stringFromDate(self.timestamp)
         return "[\(stamp) - \(self.value)]"
     }
 }
 
-// Define == operator for Equatable types
-public func == <T : Equatable>(lhs: DataPoint<T>, rhs:DataPoint<T>) -> Bool {
+//MARK: Equatable and Comparable implementation
+
+extension DataPoint : Equatable, Comparable {
+}
+
+public func == (lhs: DataPoint, rhs: DataPoint) -> Bool {
     return lhs.value == rhs.value
 }
 
-// Comparable operator definitions
-public func < <T : Comparable>(lhs:DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+public func < (lhs: DataPoint, rhs: DataPoint) -> Bool {
     return lhs.value < rhs.value
 }
 
-public func <= <T : Comparable>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+public func <= (lhs: DataPoint, rhs: DataPoint) -> Bool {
     return lhs.value <= rhs.value
 }
 
-public func > <T : Comparable>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+public func > (lhs: DataPoint, rhs: DataPoint) -> Bool {
     return lhs.value > rhs.value
 }
 
-public func >= <T : Comparable>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
-    return lhs.value >= rhs.value
+public func >= (lhs: DataPoint, rhs: DataPoint) -> Bool {
+    return lhs.value < rhs.value
 }
 

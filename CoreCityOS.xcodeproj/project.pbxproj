@@ -14,7 +14,6 @@
 		5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
 		517406B51C426BC400815AF0 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		517406B61C426BC400815AF0 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
-		517406B71C426BC400815AF0 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B01C426BC400815AF0 /* DeviceType.swift */; };
 		517406B81C426BC400815AF0 /* FactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B11C426BC400815AF0 /* FactoryType.swift */; };
 		517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
 		517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
@@ -24,7 +23,6 @@
 		5187816E1C48470400C8B962 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		5187816F1C48470700C8B962 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
 		518781701C48470B00C8B962 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
-		518781711C48470E00C8B962 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B01C426BC400815AF0 /* DeviceType.swift */; };
 		518781721C48471100C8B962 /* FactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B11C426BC400815AF0 /* FactoryType.swift */; };
 		518781731C48471400C8B962 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
 		518781741C48471700C8B962 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
@@ -39,7 +37,6 @@
 		51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AE1C426BC400815AF0 /* DataPoint.swift */; };
 		51AB74891C4828C600D7C370 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406AF1C426BC400815AF0 /* DataType.swift */; };
 		51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5171E6ED1C4702480039D43C /* DeviceData.swift */; };
-		51AB748B1C4828CB00D7C370 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B01C426BC400815AF0 /* DeviceType.swift */; };
 		51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B11C426BC400815AF0 /* FactoryType.swift */; };
 		51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
 		51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
@@ -73,15 +70,12 @@
 		514A8F971C482349008EAD30 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		514A8FA21C482592008EAD30 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		514A8FA81C482692008EAD30 /* CoreCityOS tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		514A8FAA1C482692008EAD30 /* CoreCityOS_tvOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCityOS_tvOS_Tests.swift; sourceTree = "<group>"; };
-		514A8FAC1C482692008EAD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5171E6ED1C4702480039D43C /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		5174069D1C426B0A00815AF0 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		517406A91C426B2D00815AF0 /* CoreCityOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCityOS.h; sourceTree = "<group>"; };
 		517406AA1C426B2D00815AF0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517406AE1C426BC400815AF0 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		517406AF1C426BC400815AF0 /* DataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
-		517406B01C426BC400815AF0 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		517406B11C426BC400815AF0 /* FactoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryType.swift; sourceTree = "<group>"; };
 		517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataCollectionType.swift; sourceTree = "<group>"; };
 		517406B31C426BC400815AF0 /* LiveDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataType.swift; sourceTree = "<group>"; };
@@ -89,11 +83,7 @@
 		517406C21C426DF200815AF0 /* DataPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointTests.swift; sourceTree = "<group>"; };
 		517406C41C426DF200815AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518781641C48467F00C8B962 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		518781661C48467F00C8B962 /* CoreCityOS OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreCityOS OSX.h"; sourceTree = "<group>"; };
-		518781681C48467F00C8B962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518781791C4847E200C8B962 /* CoreCityOS OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5187817B1C4847E200C8B962 /* CoreCityOS_OSX_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCityOS_OSX_Tests.swift; sourceTree = "<group>"; };
-		5187817D1C4847E200C8B962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 		518781891C48F71600C8B962 /* LiveDataTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataTypeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,23 +147,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		514A8FA91C482692008EAD30 /* CoreCityOS tvOS Tests */ = {
-			isa = PBXGroup;
-			children = (
-				514A8FAA1C482692008EAD30 /* CoreCityOS_tvOS_Tests.swift */,
-				514A8FAC1C482692008EAD30 /* Info.plist */,
-			);
-			path = "CoreCityOS tvOS Tests";
-			sourceTree = "<group>";
-		};
 		517406931C426B0A00815AF0 = {
 			isa = PBXGroup;
 			children = (
 				517406A81C426B2D00815AF0 /* Sources */,
 				517406C11C426DF200815AF0 /* Tests */,
-				514A8FA91C482692008EAD30 /* CoreCityOS tvOS Tests */,
-				518781651C48467F00C8B962 /* CoreCityOS OSX */,
-				5187817A1C4847E200C8B962 /* CoreCityOS OSX Tests */,
 				5174069E1C426B0A00815AF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,7 +175,6 @@
 				517406AE1C426BC400815AF0 /* DataPoint.swift */,
 				517406AF1C426BC400815AF0 /* DataType.swift */,
 				5171E6ED1C4702480039D43C /* DeviceData.swift */,
-				517406B01C426BC400815AF0 /* DeviceType.swift */,
 				517406B11C426BC400815AF0 /* FactoryType.swift */,
 				518781871C48F5C200C8B962 /* LiveData.swift */,
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
@@ -215,24 +192,6 @@
 				518781891C48F71600C8B962 /* LiveDataTypeTests.swift */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		518781651C48467F00C8B962 /* CoreCityOS OSX */ = {
-			isa = PBXGroup;
-			children = (
-				518781661C48467F00C8B962 /* CoreCityOS OSX.h */,
-				518781681C48467F00C8B962 /* Info.plist */,
-			);
-			path = "CoreCityOS OSX";
-			sourceTree = "<group>";
-		};
-		5187817A1C4847E200C8B962 /* CoreCityOS OSX Tests */ = {
-			isa = PBXGroup;
-			children = (
-				5187817B1C4847E200C8B962 /* CoreCityOS_OSX_Tests.swift */,
-				5187817D1C4847E200C8B962 /* Info.plist */,
-			);
-			path = "CoreCityOS OSX Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,7 +438,6 @@
 				51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */,
 				51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */,
 				5187818D1C490CA600C8B962 /* LiveData.swift in Sources */,
-				51AB748B1C4828CB00D7C370 /* DeviceType.swift in Sources */,
 				51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */,
 				51AB74891C4828C600D7C370 /* DataType.swift in Sources */,
 				51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */,
@@ -504,7 +462,6 @@
 				517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */,
 				518781881C48F5C200C8B962 /* LiveData.swift in Sources */,
 				5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */,
-				517406B71C426BC400815AF0 /* DeviceType.swift in Sources */,
 				517406B81C426BC400815AF0 /* FactoryType.swift in Sources */,
 				517406B61C426BC400815AF0 /* DataType.swift in Sources */,
 			);
@@ -524,7 +481,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5187816E1C48470400C8B962 /* DataPoint.swift in Sources */,
-				518781711C48470E00C8B962 /* DeviceType.swift in Sources */,
 				518781721C48471100C8B962 /* FactoryType.swift in Sources */,
 				5187818E1C490CA700C8B962 /* LiveData.swift in Sources */,
 				518781731C48471400C8B962 /* LiveDataType.swift in Sources */,

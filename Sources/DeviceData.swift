@@ -18,7 +18,7 @@
 public struct DeviceData {
     
     /// Device ID
-    public var id : String
+    public var deviceID : String
     
     /// Device model
     public var model : String?
@@ -32,8 +32,8 @@ public struct DeviceData {
     /// Provides additional object for storing any device specific info
     public var deviceInfo : [String: AnyObject]?
     
-    public init(id: String, model : String? = nil, schema: String? = nil, version: String? = nil,deviceInfo info: [String: AnyObject]? = nil) {
-        self.id = id
+    public init(deviceID id: String, model : String? = nil, schema: String? = nil, version: String? = nil,deviceInfo info: [String: AnyObject]? = nil) {
+        self.deviceID = id
         self.model = model
         self.schema = schema
         self.version = version

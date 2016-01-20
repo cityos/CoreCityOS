@@ -15,7 +15,7 @@ public struct LiveData<T: Equatable> : LiveDataType {
     public var jsonKey : String
     public var type : DataType
     public var unitNotation : String
-    public var dataPoints = [DataPoint<DataPointType>]()
+    public var dataPoints = [DataPoint]()
     
     public init(dataType type: DataType, jsonKey key: String, unitNotation notation: String) {
         self.jsonKey = key

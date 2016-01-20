@@ -15,15 +15,15 @@ import XCTest
 class DataPointTests: XCTestCase {
     
     func testEquatable() {
-        let dataPoint = DataPoint<Int>(value: 50)
-        let otherDataPoint = DataPoint<Int>(value: 50)
+        let dataPoint = DataPoint(value: 50)
+        let otherDataPoint = DataPoint(value: 50)
         
         XCTAssert(dataPoint == otherDataPoint, "Data points are not equal")
     }
     
     func testComparable() {
-        var dataPoint = DataPoint<Double>(value: 25.3)
-        var otherDataPoint = DataPoint<Double>(value: 30.0)
+        var dataPoint = DataPoint(value: 25.3)
+        var otherDataPoint = DataPoint(value: 30.0)
         
         XCTAssert(dataPoint < otherDataPoint, "Data points should be comparable with <")
         

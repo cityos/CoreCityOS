@@ -12,8 +12,6 @@
 ///Structures conforming live data type can be used to represent live data
 public protocol LiveDataType {
     
-    typealias DataPointType : Equatable
-    
     /// JSON key under which data value is stored
     var jsonKey : String { get }
     
@@ -24,19 +22,19 @@ public protocol LiveDataType {
     var unitNotation: String { get }
     
     /// Holds all readings for data type
-    var dataPoints : [DataPoint<DataPointType>] { get set }
+    var dataPoints : [DataPoint] { get set }
 }
 
 extension LiveDataType {
     
     /// Returns current data point from the `dataPoints` array.
     /// The newest data point is always the first element in the array
-    public var currentDataPoint : DataPoint<DataPointType>? {
+    public var currentDataPoint : DataPoint? {
         return dataPoints.first
     }
     
     /// Insert data point to the `dataPoints` array at index 0.
-    public mutating func addDataPoint(point: DataPoint<DataPointType>) {
+    public mutating func addDataPoint(point: DataPoint) {
         dataPoints.insert(point, atIndex: 0)
     }
 }

@@ -22,7 +22,7 @@ class LiveDataTypeTests: XCTestCase {
         )
         
         for i in 1...10 {
-            let dataPoint = DataPoint<Double>(value: Double(i))
+            let dataPoint = DataPoint(value: Double(i))
             humidity.addDataPoint(dataPoint)
         }
         
@@ -37,7 +37,7 @@ class LiveDataTypeTests: XCTestCase {
         )
         
         for i in 1...10 {
-            let dataPoint = DataPoint<Double>(value: Double(i))
+            let dataPoint = DataPoint(value: Double(i))
             humidity.addDataPoint(dataPoint)
         }
         
