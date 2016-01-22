@@ -33,14 +33,32 @@ public protocol LiveDataCollectionType {
 extension LiveDataCollectionType {
     
     public subscript (type: DataType) -> LiveDataType? {
-        return self.allReadings
-            .filter { $0.type.dataIdentifier == type.dataIdentifier }
-            .first
+        get {
+            return self.allReadings
+                .filter { $0.type.dataIdentifier == type.dataIdentifier }
+                .first
+        }
+        
+        set {
+            let index = self.allReadings.indexOf({$0.type.dataIdentifier == type.dataIdentifier})
+            if let index = index {
+                self.allReadings[index] = newValue!
+            }
+        }
     }
     
     public subscript(jsonKey: String) -> LiveDataType? {
-        return self.allReadings
-            .filter { $0.jsonKey == jsonKey }
-            .first
+        get {
+            return self.allReadings
+                .filter { $0.jsonKey == jsonKey }
+                .first
+        }
+        
+        set {
+            let index = self.allReadings.indexOf({$0.jsonKey == jsonKey})
+            if let index = index {
+                self.allReadings[index] = newValue!
+            }
+        }
     }
 }

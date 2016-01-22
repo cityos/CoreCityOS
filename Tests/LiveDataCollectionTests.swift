@@ -49,12 +49,20 @@ class LiveDataCollectionTests: XCTestCase {
         XCTAssert(testDataCollection.allReadings.count != 0, "All readings count should not be zero")
     }
     
-    func testSubscripts() {
+    func testSubscriptsGet() {
         let temperature = testDataCollection[.Temperature]
         let noise = testDataCollection["noise"]
         
         XCTAssert(temperature != nil, "Temperature property should exist")
         XCTAssert(noise != nil, "Noise property should exist")
+    }
+    
+    func testSubscriptsSet() {
+        testDataCollection[.Temperature]?.addDataPoint(DataPoint(value: 20))
+        testDataCollection[.Temperature]?.addDataPoint(DataPoint(value: 40))
+        
+        XCTAssert(testDataCollection[.Temperature]?.currentDataPoint?.value == 40, "Current data point should be equal to 20")
+        XCTAssert(testDataCollection[.Temperature]?.dataPoints.count == 2, "Data points count should be 2")
     }
     
     func testDataPointMechanism() {
