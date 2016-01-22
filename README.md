@@ -4,10 +4,11 @@
 Core iOS services used for building and shipping iOS applications
 
 ## Installation
-1. [Linux](http://google.com)
-2. [OS X](http://google.com)
+1. [Swift Package Manager](http://google.com)
+2. [Carthage](http://google.com)
+3. [Embedded Framework]()
 
-### Linux installation
+### Swift Package Manager
 Install CoreCityOS by using [Swift Package Manager](https://github.com/apple/swift-package-manager).
 
 ```swift
@@ -26,14 +27,10 @@ After dependency is added to the `Package.swift`, run `swift build` to compile t
 ```swift
 import CoreCityOS
 ```
-### OS X installation
-CoreCityOS can be installed on OS by using any of the following:
-* Swift Package Manager
-* Carthage
-* Embedded framework
+### Carthage
 
 To install using Carthage add following  to the Cartfile:
 ```bash
-github "cityos/CoreCityOS" ~> 0.0.1
+github "cityos/CoreCityOS" "master"
 ```
 
