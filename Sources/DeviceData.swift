@@ -9,11 +9,16 @@
 //
 //===----------------------------------------------------------------------===//
 
-/** Describes data that define one hardware device. Most common data is:
-* `id` - id of the device, most commonly ipv6 address
-* `model` - model type of the device
-* `schema` - schema version
-* `version` - device version
+/** 
+    Describes info data for one hardware device. Most common data is:
+
+    * `id` - id of the device, most commonly ipv6 address
+    * `model` - model type of the device
+    * `schema` - schema version
+    * `version` - device version
+
+    In addition to these properties, `DeviceData` can also store additional
+    data with `deviceInfo` dictionary.
 */
 public struct DeviceData {
     
@@ -32,6 +37,7 @@ public struct DeviceData {
     /// Provides additional object for storing any device specific info
     public var deviceInfo: [String: AnyObject]?
     
+    /// Creates `DeviceData`
     public init(deviceID: String,
         model: String? = nil,
         schema: String? = nil,

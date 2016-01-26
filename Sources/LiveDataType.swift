@@ -9,7 +9,11 @@
 //
 //===----------------------------------------------------------------------===//
 
-///Structures conforming live data type can be used to represent live data
+/**
+    Structures conforming live data type can be used to represent live data.
+
+    To see example implementation of this protocol refer to the `LiveData`
+*/
 public protocol LiveDataType {
     
     /// JSON key under which data value is stored

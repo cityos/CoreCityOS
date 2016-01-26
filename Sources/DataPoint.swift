@@ -12,12 +12,18 @@ import class Foundation.NSDate
 import class Foundation.NSDateFormatter
 import typealias Foundation.NSTimeInterval
 
-/// Single immutable data point with timestamp information.
+/**
+    Single arbitary immutable data point with timestamp information. Data points act as a
+    data model inside `LiveDataType`. `DataPoint` can be initalized with value only, in which
+    case timestamp is set to the current device system timestamp.
+ 
+    `DataPoint` structures adopt `Equatable` and `Comparable` protocols.
+*/
 public struct DataPoint {
     
     public typealias DataPointValue = Double
     
-    /// Creation date timestamp
+    /// Data point reation date timestamp
     public let timestamp: NSDate
     
     /// Data reading value
@@ -38,7 +44,7 @@ public struct DataPoint {
      Initializes data reading with value and unix time stamp
      
      - parameter value: Data reading value
-     - parameter timeStamp unix time stamp
+     - parameter timeStamp: unix time stamp
      */
     public init(value: DataPointValue, unixTimeStamp stamp: NSTimeInterval) {
         self.value = value
@@ -67,6 +73,7 @@ extension DataPoint : CustomStringConvertible {
         return dateFormatter
     }
     
+    /// CustomStringConvertible implementation
     public var description: String {
         let stamp = DataPoint.dateFormatter.stringFromDate(self.timestamp)
         return "[\(stamp) - \(self.value)]"

@@ -9,6 +9,7 @@
 //
 //===----------------------------------------------------------------------===//
 
+/// Implementation of `LiveDataType`
 public struct LiveData: LiveDataType {
     
     public var jsonKey: String

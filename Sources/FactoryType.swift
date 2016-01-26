@@ -9,6 +9,13 @@
 //
 //===----------------------------------------------------------------------===//
 
+/** 
+    Strutures that adopt `FactoryType` protocol can be used to create network layer
+    of the framework. It should work in conjuction with all other defined data types,
+    and always return instances of protocol, rather instances of structures.
+    
+    All `FactoryType` structures should have a singleton access object named `sharedInstance`
+*/
 public protocol FactoryType {
     
     /// Returns singleton Factory object

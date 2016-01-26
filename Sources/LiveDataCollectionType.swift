@@ -10,13 +10,53 @@
 //===----------------------------------------------------------------------===//
 
 /**
-Structures that adopt `LiveCollectionDataType` protocol can be used to
-represent arbitary collection of `LiveDataType` data readings. Since
-each device can use different schema for its data points,
-`LiveCollectionDataType` is used to create arbitary scheme definition.
+    Structures that adopt `LiveDataCollectionType` protocol can be used to
+    represent arbitary collection of `LiveDataType` data readings. Since
+    each device can use different schema for its data points,
+    `LiveDataCollectionType` is used to create arbitary scheme definition.
 
-Each structure that implements this protocol gets all subscript
-implementations via protocol extensions.
+    Each structure that implements this protocol gets all subscript
+    implementations via protocol extensions.
+
+    Example protocol implementation:
+
+    ```swift
+    class TestDataCollection: LiveDataCollectionType {
+        var deviceData = DeviceData(deviceID: "test-device")
+        var creationDate = NSDate()
+        var allReadings = [LiveDataType]()
+
+        var temperature: LiveDataType {
+            return LiveData(
+            dataType: .Temperature,
+            jsonKey: "temp",
+            unitNotation: "C"
+            )
+        }
+
+        var noise: LiveDataType {
+            return LiveData(
+            dataType: .Noise,
+            jsonKey: "noise",
+            unitNotation: "dB"
+            )
+        }
+
+        init() {
+            self.allReadings = [
+                temperature,
+                noise
+            ]
+        }
+    }
+
+    ```
+
+    Once you define conforming structure, you can initialize it like following:
+
+    ```swift
+    let collection = TestDataCollection()
+    ```
 */
 public protocol LiveDataCollectionType {
     

@@ -11,7 +11,8 @@
 
 /**
  Data type structure is used to define types of data that devices are capable
- of reading. `DataType` is by default packed with some types that are:
+ of reading. `DataType` by default contains some types:
+
  * Energy
  * Temperature
  * Humidity
@@ -20,29 +21,51 @@
  * ParticleMeter
  * Noise
  
- Additional data types can be defined via extension of DataType like:
- ```
+ Additional data types can be defined via extension of `DataType` like:
+
+ ```swift
  extension DataType {
     static let AirPressure = DataType(dataIdentifier: "Air Pressure")
  }
  ```
+
+`DataType` can be used with subscript functions implemented on `LiveDataCollectionType`
 */
 public struct DataType {
+    
+    /// Human-readable form of data identifier, for example Temperature or Humidity
     public let dataIdentifier: String
     
-    /// Use dataIdetifier object for the human like data type definition
-    /// such as Temperature or Carbon Dioxide
+    /** 
+        Use dataIdetifier object for the human like data type definition
+        such as Temperature or Carbon Dioxide
+    */
     public init(dataIdentifier identifier: String) {
         self.dataIdentifier = identifier
     }
     
+    /// Energy data type
     public static let Energy = DataType(dataIdentifier: "Energy")
+    
+    /// Temperature data type
     public static let Temperature = DataType(dataIdentifier: "Temperature")
+    
+    /// Humidity data type
     public static let Humidity = DataType(dataIdentifier: "Humidity")
+    
+    /// Natural light data type
     public static let NaturalLight = DataType(dataIdentifier: "Natural Light")
+    
+    /// Carbon dioxide data type
     public static let CarbonDioxide = DataType(dataIdentifier: "Carbon Dioxide")
+    
+    /// Particulate 2.5 matter data type
     public static let ParticleMatter25 = DataType(dataIdentifier: "PM 2.5 particles")
+    
+    /// Particulate 10 matter data type
     public static let ParticleMatter10 = DataType(dataIdentifier: "PM 10 particles")
+    
+    /// Noise data type
     public static let Noise = DataType(dataIdentifier: "Noise")
 }
 
