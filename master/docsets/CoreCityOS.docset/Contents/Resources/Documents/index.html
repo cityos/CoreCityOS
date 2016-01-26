@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoreCityOS  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="CoreCityOS  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CoreCityOS Docs</a> (78% documented)</p>
+        <p class="header-right"><a href="https://github.com/cityos/CoreCityOS"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fcityos%2Egithub%2Eio%2FCoreCityOS%2Fdocsets%2FCoreCityOS%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CoreCityOS Reference</a>
+        <img id="carat" src="img/carat.png" />
+        CoreCityOS  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi1lFTVS_9DataPointS0__Sb">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2leFTVS_9DataPointS0__Sb">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_9DataPointS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_10DeviceDataS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_8DataTypeS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi1gFTVS_9DataPointS0__Sb">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2geFTVS_9DataPointS0__Sb">&gt;=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/FactoryType.html">FactoryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LiveDataType.html">LiveDataType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/DataPoint.html">DataPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DataType.html">DataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DeviceData.html">DeviceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveData.html">LiveData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="https://img.shields.io/badge/platform-linux%20%7C%20osx%20%7C%20ios-blue.svg" alt="https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg"> <a href="https://travis-ci.org/cityos/CoreCityOS"><img src="https://travis-ci.org/cityos/CoreCityOS.svg?branch=master" alt="Build Status"></a></p>
+<a href='#corecityos' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='corecityos'>CoreCityOS</h1>
+
+<p>Core iOS services used for building and shipping iOS applications</p>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+
+<ol>
+<li><a href="http://google.com">Swift Package Manager</a></li>
+<li><a href="http://google.com">Carthage</a></li>
+<li><a href="">Embedded Framework</a></li>
+</ol>
+<a href='#swift_package_manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='swift_package_manager'>Swift Package Manager</h3>
+
+<p>Install CoreCityOS by using <a href="https://github.com/apple/swift-package-manager">Swift Package Manager</a>.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
+
+<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span> <span class="p">(</span>
+  <span class="nv">name</span><span class="p">:</span> <span class="s">"CityOS"</span><span class="p">,</span>
+  <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/cityos/CoreCityOS.git"</span><span class="p">,</span> <span class="nv">majorVersion</span><span class="p">:</span> <span class="mi">1</span><span class="p">),</span>
+  <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>After dependency is added to the <code>Package.swift</code>, run <code>swift build</code> to compile the framework. After compiling use the import statement.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CoreCityOS</span>
+</code></pre>
+<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
+
+<p>To install using Carthage add following  to the Cartfile:
+<code>bash
+github &quot;cityos/CoreCityOS&quot; &quot;master&quot;
+</code></p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structs  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Structs  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CoreCityOS Docs</a> (78% documented)</p>
+        <p class="header-right"><a href="https://github.com/cityos/CoreCityOS"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fcityos%2Egithub%2Eio%2FCoreCityOS%2Fdocsets%2FCoreCityOS%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CoreCityOS Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Structs  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi1lFTVS_9DataPointS0__Sb">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2leFTVS_9DataPointS0__Sb">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_9DataPointS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_10DeviceDataS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_8DataTypeS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi1gFTVS_9DataPointS0__Sb">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2geFTVS_9DataPointS0__Sb">&gt;=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/FactoryType.html">FactoryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LiveDataType.html">LiveDataType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/DataPoint.html">DataPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DataType.html">DataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DeviceData.html">DeviceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveData.html">LiveData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Structs</h1>
+            <p>The following structs are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10CoreCityOS9DataPoint"></a>
+                    <a name="//apple_ref/swift/Struct/DataPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10CoreCityOS9DataPoint">DataPoint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Single arbitary immutable data point with timestamp information. Data points act as a
+data model inside <code><a href="Protocols/LiveDataType.html">LiveDataType</a></code>. <code>DataPoint</code> can be initalized with value only, in which
+case timestamp is set to the current device system timestamp.</p>
+
+<p><code>DataPoint</code> structures adopt <code>Equatable</code> and <code>Comparable</code> protocols.</p>
+
+                        <a href="Structs/DataPoint.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPoint</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DataPoint.swift#L22-L64">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10CoreCityOS8LiveData"></a>
+                    <a name="//apple_ref/swift/Struct/LiveData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10CoreCityOS8LiveData">LiveData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implementation of <code><a href="Protocols/LiveDataType.html">LiveDataType</a></code></p>
+
+                        <a href="Structs/LiveData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LiveData</span><span class="p">:</span> <span class="kt">LiveDataType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveData.swift#L13-L25">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10CoreCityOS10DeviceData"></a>
+                    <a name="//apple_ref/swift/Struct/DeviceData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10CoreCityOS10DeviceData">DeviceData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes info data for one hardware device. Most common data is:</p>
+
+<ul>
+<li><code>id</code> - id of the device, most commonly ipv6 address</li>
+<li><code>model</code> - model type of the device</li>
+<li><code>schema</code> - schema version</li>
+<li><code>version</code> - device version</li>
+</ul>
+
+<p>In addition to these properties, <code>DeviceData</code> can also store additional
+data with <code>deviceInfo</code> dictionary.</p>
+
+                        <a href="Structs/DeviceData.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeviceData</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DeviceData.swift#L23-L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10CoreCityOS8DataType"></a>
+                    <a name="//apple_ref/swift/Struct/DataType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10CoreCityOS8DataType">DataType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data type structure is used to define types of data that devices are capable
+ of reading. <code>DataType</code> by default contains some types:</p>
+
+<ul>
+<li>Energy</li>
+<li>Temperature</li>
+<li>Humidity</li>
+<li>NaturalLight</li>
+<li>CarbonDioxide</li>
+<li>ParticleMeter</li>
+<li>Noise</li>
+</ul>
+
+<p>Additional data types can be defined via extension of <code>DataType</code> like:</p>
+
+<pre class="highlight swift"><code> <span class="kd">extension</span> <span class="kt">DataType</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="k">let</span> <span class="nv">AirPressure</span> <span class="o">=</span> <span class="kt">DataType</span><span class="p">(</span><span class="nv">dataIdentifier</span><span class="p">:</span> <span class="s">"Air Pressure"</span><span class="p">)</span>
+ <span class="p">}</span>
+</code></pre>
+
+<p><code>DataType</code> can be used with subscript functions implemented on <code><a href="Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a></code></p>
+
+                        <a href="Structs/DataType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DataType.swift#L34-L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

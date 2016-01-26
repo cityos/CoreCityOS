@@ -1,0 +1,56 @@
+  xcodebuild_arguments: 
+    - "-project"
+    - "CoreCityOS/CoreCityOS.xcodeproj"
+    - "-scheme"
+    - "CoreCityOS iOS"
+  swift_version: "2.1.1"
+  author_name: "CityOS"
+  author_url: "http://cityos.io"
+  module_name: "CoreCityOS"
+  readme_path: "CoreCityOS/README.md"
+  root_url: "http://cityos.github.io/CoreCityOS/"
+  github_url: "https://github.com/cityos/CoreCityOS"
+  github_file_prefix: "https://github.com/cityos/CoreCityOS/tree/master"
+  theme: fullwidth
+  custom_categories: 
+    - 
+      name: "Documentation"
+      children: 
+        - "Installation"
+        - "The Gist"
+        - "Types and generic State"
+        - "Bindings"
+        - "Redux Compatibility"
+        - "Contributing"
+        - "Progress"
+        - "License"
+    - 
+      name: "Stores"
+      children: 
+        - "StoreType"
+        - "Store"
+        - "createStore(_:state:)"
+    - 
+      name: "Disposables"
+      children: 
+        - "ReduxDisposable"
+        - "SimpleReduxDisposable"
+    - 
+      name: "Actions"
+      children: 
+        - "Action"
+        - "FluxStandardAction"
+        - "SimpleStandardAction"
+        - "StandardAction"
+        - "DefaultAction"
+        - "bindActionCreators(_:dispatch:)"
+    - 
+      name: "Middleware"
+      children: 
+        - "MiddlewareApiType"
+        - "MiddlewareApi"
+        - "applyMiddleware(_:)"
+    - 
+      name: "Utilities"
+      children: 
+        - "compose(_:)"

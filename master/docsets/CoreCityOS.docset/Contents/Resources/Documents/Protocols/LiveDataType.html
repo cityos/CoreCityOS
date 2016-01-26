@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LiveDataType Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/LiveDataType" class="dashAnchor"></a>
+    <a title="LiveDataType Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CoreCityOS Docs</a> (78% documented)</p>
+        <p class="header-right"><a href="https://github.com/cityos/CoreCityOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fcityos%2Egithub%2Eio%2FCoreCityOS%2Fdocsets%2FCoreCityOS%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CoreCityOS Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LiveDataType Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi1lFTVS_9DataPointS0__Sb">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi2leFTVS_9DataPointS0__Sb">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_9DataPointS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_10DeviceDataS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_8DataTypeS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi1gFTVS_9DataPointS0__Sb">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF10CoreCityOSoi2geFTVS_9DataPointS0__Sb">&gt;=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FactoryType.html">FactoryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LiveDataType.html">LiveDataType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DataPoint.html">DataPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataType.html">DataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DeviceData.html">DeviceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveData.html">LiveData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LiveDataType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LiveDataType</span></code></pre>
+
+                </div>
+              </div>
+            <p>Structures conforming live data type can be used to represent live data.</p>
+
+<p>To see example implementation of this protocol refer to the <code><a href="../Structs/LiveData.html">LiveData</a></code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS12LiveDataType7jsonKeySS"></a>
+                    <a name="//apple_ref/swift/Property/jsonKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS12LiveDataType7jsonKeySS">jsonKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>JSON key under which data value is stored</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">jsonKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L20">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS12LiveDataType4typeVS_8DataType"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS12LiveDataType4typeVS_8DataType">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data type with identifier, for example Temperature or Humidity</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">DataType</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L23">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS12LiveDataType12unitNotationSS"></a>
+                    <a name="//apple_ref/swift/Property/unitNotation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS12LiveDataType12unitNotationSS">unitNotation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unit identifier, for example % or MpH</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">unitNotation</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L26">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS12LiveDataType10dataPointsGSaVS_9DataPoint_"></a>
+                    <a name="//apple_ref/swift/Property/dataPoints" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS12LiveDataType10dataPointsGSaVS_9DataPoint_">dataPoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Holds all readings for data type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dataPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">DataPoint</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L29">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:veRq_10CoreCityOS12LiveDataType_S_S0_16currentDataPointGSqVS_9DataPoint_"></a>
+                    <a name="//apple_ref/swift/Property/currentDataPoint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:veRq_10CoreCityOS12LiveDataType_S_S0_16currentDataPointGSqVS_9DataPoint_">currentDataPoint</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns current data point from the <code><a href="../Protocols/LiveDataType.html#/s:vP10CoreCityOS12LiveDataType10dataPointsGSaVS_9DataPoint_">dataPoints</a></code> array.
+The newest data point is always the first element in the array</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentDataPoint</span><span class="p">:</span> <span class="kt">DataPoint</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L36-L38">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FeRq_10CoreCityOS12LiveDataType_S_S0_12addDataPointuRq_S0__FRq_FVS_9DataPointT_"></a>
+                    <a name="//apple_ref/swift/Method/addDataPoint(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FeRq_10CoreCityOS12LiveDataType_S_S0_12addDataPointuRq_S0__FRq_FVS_9DataPointT_">addDataPoint(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Insert data point to the <code><a href="../Protocols/LiveDataType.html#/s:vP10CoreCityOS12LiveDataType10dataPointsGSaVS_9DataPoint_">dataPoints</a></code> array at index 0.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">addDataPoint</span><span class="p">(</span><span class="nv">point</span><span class="p">:</span> <span class="kt">DataPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L41-L43">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FeRq_10CoreCityOS12LiveDataType_S_S0_24fullDataReadingSpecifieruRq_S0__Fq_FT_SS"></a>
+                    <a name="//apple_ref/swift/Method/fullDataReadingSpecifier()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FeRq_10CoreCityOS12LiveDataType_S_S0_24fullDataReadingSpecifieruRq_S0__Fq_FT_SS">fullDataReadingSpecifier()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns full data specifier with value and unit notation, for ex. 3 Mhw</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fullDataReadingSpecifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L48-L50">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

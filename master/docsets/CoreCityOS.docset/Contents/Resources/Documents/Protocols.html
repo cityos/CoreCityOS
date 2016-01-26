@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">CoreCityOS Docs</a> (78% documented)</p>
+        <p class="header-right"><a href="https://github.com/cityos/CoreCityOS"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://http%3A%2F%2Fcityos%2Egithub%2Eio%2FCoreCityOS%2Fdocsets%2FCoreCityOS%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">CoreCityOS Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi1lFTVS_9DataPointS0__Sb">&lt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2leFTVS_9DataPointS0__Sb">&lt;=(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_9DataPointS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_10DeviceDataS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_8DataTypeS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi1gFTVS_9DataPointS0__Sb">&gt;(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:ZF10CoreCityOSoi2geFTVS_9DataPointS0__Sb">&gt;=(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/FactoryType.html">FactoryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LiveDataType.html">LiveDataType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/DataPoint.html">DataPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DataType.html">DataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DeviceData.html">DeviceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveData.html">LiveData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P10CoreCityOS22LiveDataCollectionType"></a>
+                    <a name="//apple_ref/swift/Protocol/LiveDataCollectionType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P10CoreCityOS22LiveDataCollectionType">LiveDataCollectionType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structures that adopt <code>LiveDataCollectionType</code> protocol can be used to
+represent arbitary collection of <code><a href="Protocols/LiveDataType.html">LiveDataType</a></code> data readings. Since
+each device can use different schema for its data points,
+<code>LiveDataCollectionType</code> is used to create arbitary scheme definition.</p>
+
+<p>Each structure that implements this protocol gets all subscript
+implementations via protocol extensions.</p>
+
+<p>Example protocol implementation:</p>
+
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TestDataCollection</span><span class="p">:</span> <span class="kt">LiveDataCollectionType</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">deviceData</span> <span class="o">=</span> <span class="kt">DeviceData</span><span class="p">(</span><span class="nv">deviceID</span><span class="p">:</span> <span class="s">"test-device"</span><span class="p">)</span>
+    <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
+    <span class="k">var</span> <span class="nv">allReadings</span> <span class="o">=</span> <span class="p">[</span><span class="kt">LiveDataType</span><span class="p">]()</span>
+
+    <span class="k">var</span> <span class="nv">temperature</span><span class="p">:</span> <span class="kt">LiveDataType</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">LiveData</span><span class="p">(</span>
+        <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Temperature</span><span class="p">,</span>
+        <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"temp"</span><span class="p">,</span>
+        <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"C"</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">noise</span><span class="p">:</span> <span class="kt">LiveDataType</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">LiveData</span><span class="p">(</span>
+        <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Noise</span><span class="p">,</span>
+        <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"noise"</span><span class="p">,</span>
+        <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"dB"</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">allReadings</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">temperature</span><span class="p">,</span>
+            <span class="n">noise</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre>
+
+<p>Once you define conforming structure, you can initialize it like following:</p>
+
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">collection</span> <span class="o">=</span> <span class="kt">TestDataCollection</span><span class="p">()</span>
+</code></pre>
+
+                        <a href="Protocols/LiveDataCollectionType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LiveDataCollectionType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataCollectionType.swift#L61-L71">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P10CoreCityOS12LiveDataType"></a>
+                    <a name="//apple_ref/swift/Protocol/LiveDataType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P10CoreCityOS12LiveDataType">LiveDataType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structures conforming live data type can be used to represent live data.</p>
+
+<p>To see example implementation of this protocol refer to the <code><a href="Structs/LiveData.html">LiveData</a></code></p>
+
+                        <a href="Protocols/LiveDataType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LiveDataType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L17-L30">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P10CoreCityOS11FactoryType"></a>
+                    <a name="//apple_ref/swift/Protocol/FactoryType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P10CoreCityOS11FactoryType">FactoryType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Strutures that adopt <code>FactoryType</code> protocol can be used to create network layer
+of the framework. It should work in conjuction with all other defined data types,
+and always return instances of protocol, rather instances of structures.</p>
+
+<p>All <code>FactoryType</code> structures should have a singleton access object named <code>sharedInstance</code></p>
+
+                        <a href="Protocols/FactoryType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FactoryType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/FactoryType.swift#L19-L23">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

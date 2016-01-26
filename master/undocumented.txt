@@ -1,0 +1,16 @@
+DataPoint.swift
+	public func == (lhs: DataPoint, rhs: DataPoint) -> Bool
+	public func < (lhs: DataPoint, rhs: DataPoint) -> Bool
+	public func <= (lhs: DataPoint, rhs: DataPoint) -> Bool
+	public func > (lhs: DataPoint, rhs: DataPoint) -> Bool
+	public func >= (lhs: DataPoint, rhs: DataPoint) -> Bool
+LiveData.swift
+	public var jsonKey: String
+	public var type: DataType
+	public var unitNotation: String
+	public var dataPoints = [DataPoint]()
+	public init(dataType type: DataType, jsonKey key: String, unitNotation notation: String)
+DeviceData.swift
+	public func == (lhs: DeviceData, rhs: DeviceData) -> Bool
+DataType.swift
+	public func == (lhs: DataType, rhs: DataType) -> Bool
