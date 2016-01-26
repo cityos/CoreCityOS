@@ -1,8 +1,8 @@
+<img src="http://i.imgur.com/wkQEhiu.png" width="300px" height="100px"/>
+
 ![https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg](https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg) [![Build Status](https://travis-ci.org/cityos/CoreCityOS.svg?branch=master)](https://travis-ci.org/cityos/CoreCityOS)
 
-# CoreCityOS
-Core iOS services used for building and shipping iOS applications
-
+CoreCityOS framework is designed as an CityOS open-source data format standard in the new IOT world. 
 ## Installation
 1. [Swift Package Manager](http://google.com)
 2. [Carthage](http://google.com)
