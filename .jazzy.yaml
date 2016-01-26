@@ -11,6 +11,7 @@
   root_url: "http://cityos.github.io/CoreCityOS/"
   github_url: "https://github.com/cityos/CoreCityOS"
   github_file_prefix: "https://github.com/cityos/CoreCityOS/tree/master"
+  exclude: "~/core-ios/CoreCityOS/Sources/Operators.swift"
   theme: "fullwidth"
   custom_categories: 
     - 
