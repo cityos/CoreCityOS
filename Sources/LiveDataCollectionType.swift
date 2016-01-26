@@ -21,13 +21,13 @@ implementations via protocol extensions.
 public protocol LiveDataCollectionType {
     
     /// Device data
-    var deviceData : DeviceData { get set }
+    var deviceData: DeviceData { get set }
     
     /// Creation date
-    var creationDate : NSDate { get set }
+    var creationDate: NSDate { get set }
     
     /// All live data readings
-    var allReadings : [LiveDataType] { get set }
+    var allReadings: [LiveDataType] { get set }
 }
 
 extension LiveDataCollectionType {
@@ -40,7 +40,7 @@ extension LiveDataCollectionType {
         }
         
         set {
-            let index = self.allReadings.indexOf({$0.type.dataIdentifier == type.dataIdentifier})
+            let index = self.allReadings.indexOf { $0.type.dataIdentifier == type.dataIdentifier }
             if let index = index {
                 self.allReadings[index] = newValue!
             }
@@ -55,7 +55,7 @@ extension LiveDataCollectionType {
         }
         
         set {
-            let index = self.allReadings.indexOf({$0.jsonKey == jsonKey})
+            let index = self.allReadings.indexOf { $0.jsonKey == jsonKey }
             if let index = index {
                 self.allReadings[index] = newValue!
             }

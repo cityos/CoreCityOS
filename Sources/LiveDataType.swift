@@ -13,23 +13,23 @@
 public protocol LiveDataType {
     
     /// JSON key under which data value is stored
-    var jsonKey : String { get }
+    var jsonKey: String { get }
     
     /// Data type with identifier, for example Temperature or Humidity
-    var type : DataType { get }
+    var type: DataType { get }
     
     /// Unit identifier, for example % or MpH
     var unitNotation: String { get }
     
     /// Holds all readings for data type
-    var dataPoints : [DataPoint] { get set }
+    var dataPoints: [DataPoint] { get set }
 }
 
 extension LiveDataType {
     
     /// Returns current data point from the `dataPoints` array.
     /// The newest data point is always the first element in the array
-    public var currentDataPoint : DataPoint? {
+    public var currentDataPoint: DataPoint? {
         return dataPoints.first
     }
     
@@ -39,8 +39,7 @@ extension LiveDataType {
     }
 }
 
-extension LiveDataType
-{
+extension LiveDataType {
     /// Returns full data specifier with value and unit notation, for ex. 3 Mhw
     func fullDataReadingSpecifier() -> String {
         return "\(self.currentDataPoint) \(self.unitNotation)"

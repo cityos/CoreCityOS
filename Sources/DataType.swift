@@ -28,11 +28,11 @@
  ```
 */
 public struct DataType {
-    public let dataIdentifier : String
+    public let dataIdentifier: String
     
     /// Use dataIdetifier object for the human like data type definition
     /// such as Temperature or Carbon Dioxide
-    public init(dataIdentifier identifier : String) {
+    public init(dataIdentifier identifier: String) {
         self.dataIdentifier = identifier
     }
     
@@ -49,6 +49,6 @@ public struct DataType {
 extension DataType : Equatable {
 }
 
-public func ==(lhs: DataType, rhs: DataType) -> Bool {
+public func == (lhs: DataType, rhs: DataType) -> Bool {
     return lhs.dataIdentifier == rhs.dataIdentifier
 }

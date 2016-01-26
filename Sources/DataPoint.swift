@@ -12,22 +12,22 @@ import class Foundation.NSDate
 import class Foundation.NSDateFormatter
 import typealias Foundation.NSTimeInterval
 
-/// Defines single data point value with timestamp
+/// Single immutable data point with timestamp information.
 public struct DataPoint {
     
     public typealias DataPointValue = Double
     
     /// Creation date timestamp
-    public let timestamp : NSDate
+    public let timestamp: NSDate
     
     /// Data reading value
-    public var value : Double
+    public var value: Double
     
     /**
      Initializes data reading with value and time stamp
      
      - parameter value: Data reading value
-     - parameter timeStamp NSDate value
+     - parameter timeStamp: NSDate value
      */
     public init(value: DataPointValue, timeStamp stamp: NSDate) {
         self.value = value
@@ -61,13 +61,13 @@ public struct DataPoint {
 //MARK: Custom String Convertible implementation
 extension DataPoint : CustomStringConvertible {
     
-    static var dateFormatter : NSDateFormatter {
+    static var dateFormatter: NSDateFormatter {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd 'at' h:mm a"
         return dateFormatter
     }
     
-    public var description : String {
+    public var description: String {
         let stamp = DataPoint.dateFormatter.stringFromDate(self.timestamp)
         return "[\(stamp) - \(self.value)]"
     }
@@ -97,4 +97,3 @@ public func > (lhs: DataPoint, rhs: DataPoint) -> Bool {
 public func >= (lhs: DataPoint, rhs: DataPoint) -> Bool {
     return lhs.value < rhs.value
 }
-

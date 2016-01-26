@@ -9,12 +9,12 @@
 import XCTest
 import CoreCityOS
 
-class TestDataCollection : LiveDataCollectionType {
+class TestDataCollection: LiveDataCollectionType {
     var deviceData = DeviceData(deviceID: "test-device")
     var creationDate = NSDate()
     var allReadings = [LiveDataType]()
     
-    var temperature : LiveDataType {
+    var temperature: LiveDataType {
         return LiveData(
             dataType: .Temperature,
             jsonKey: "temp",
@@ -22,7 +22,7 @@ class TestDataCollection : LiveDataCollectionType {
         )
     }
     
-    var noise : LiveDataType {
+    var noise: LiveDataType {
         return LiveData(
             dataType: .Noise,
             jsonKey: "noise",
@@ -39,7 +39,7 @@ class TestDataCollection : LiveDataCollectionType {
 }
 
 class LiveDataCollectionTests: XCTestCase {
-    var testDataCollection : LiveDataCollectionType!
+    var testDataCollection: LiveDataCollectionType!
     
     override func setUp() {
         self.testDataCollection = TestDataCollection()
@@ -54,6 +54,7 @@ class LiveDataCollectionTests: XCTestCase {
         let noise = testDataCollection["noise"]
         
         XCTAssert(temperature != nil, "Temperature property should exist")
+        XCTAssert(temperature?.jsonKey == "temp", "Temperature property should have temp json key")
         XCTAssert(noise != nil, "Noise property should exist")
     }
     

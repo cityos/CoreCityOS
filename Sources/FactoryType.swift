@@ -12,5 +12,5 @@
 public protocol FactoryType {
     
     /// Returns singleton Factory object
-    static var sharedInstance : Self { get }
+    static var sharedInstance: Self { get }
 }

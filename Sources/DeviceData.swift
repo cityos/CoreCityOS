@@ -10,33 +10,44 @@
 //===----------------------------------------------------------------------===//
 
 /** Describes data that define one hardware device. Most common data is:
- * `id` - id of the device, most commonly ipv6 address
- * `model` - model type of the device
- * `schema` - schema version
- * `version` - device version
- */
+* `id` - id of the device, most commonly ipv6 address
+* `model` - model type of the device
+* `schema` - schema version
+* `version` - device version
+*/
 public struct DeviceData {
     
     /// Device ID
-    public var deviceID : String
+    public var deviceID: String
     
     /// Device model
-    public var model : String?
+    public var model: String?
     
     /// Device schema
-    public var schema : String?
+    public var schema: String?
     
     /// Device version
-    public var version : String?
+    public var version: String?
     
     /// Provides additional object for storing any device specific info
-    public var deviceInfo : [String: AnyObject]?
+    public var deviceInfo: [String: AnyObject]?
     
-    public init(deviceID id: String, model : String? = nil, schema: String? = nil, version: String? = nil,deviceInfo info: [String: AnyObject]? = nil) {
-        self.deviceID = id
-        self.model = model
-        self.schema = schema
-        self.version = version
-        self.deviceInfo = info
+    public init(deviceID: String,
+        model: String? = nil,
+        schema: String? = nil,
+        version: String? = nil,
+        deviceInfo info: [String: AnyObject]? = nil) {
+            self.deviceID = deviceID
+            self.model = model
+            self.schema = schema
+            self.version = version
+            self.deviceInfo = info
     }
+}
+
+extension DeviceData : Equatable {
+}
+
+public func == (lhs: DeviceData, rhs: DeviceData) -> Bool {
+    return lhs.deviceID == rhs.deviceID
 }
