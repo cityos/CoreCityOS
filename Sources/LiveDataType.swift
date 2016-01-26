@@ -45,7 +45,7 @@ extension LiveDataType {
 
 extension LiveDataType {
     /// Returns full data specifier with value and unit notation, for ex. 3 Mhw
-    func fullDataReadingSpecifier() -> String {
+    public func fullDataReadingSpecifier() -> String {
         return "\(self.currentDataPoint) \(self.unitNotation)"
     }
 }
