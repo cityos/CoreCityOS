@@ -73,9 +73,26 @@ extension DataPoint : CustomStringConvertible {
         return dateFormatter
     }
     
-    /// CustomStringConvertible implementation
+    /**
+        Returns textual representation of `self`.
+    */
     public var description: String {
+        return self.value.description
+    }
+}
+
+//MARK: Custom Debug String Convertible implementation
+extension DataPoint : CustomDebugStringConvertible {
+    
+    /**
+        Returns textual representation of `self` with timestamp data in form:
+     
+        ```
+        [26.1.2016 at 23:00 = 24]
+        ```
+    */
+    public var debugDescription: String {
         let stamp = DataPoint.dateFormatter.stringFromDate(self.timestamp)
-        return "[\(stamp) - \(self.value)]"
+        return "[\(stamp) = \(self.value)]"
     }
 }
