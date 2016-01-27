@@ -60,6 +60,7 @@ After that drag `CoreCityOS.xcodeproj` to your project and add it to **Linked Fr
 
 ## Usage
 After you have added CoreCityOS by any of the supported methods you can import it with import statement:
+
 ```swift
 import CoreCityOS
 ```
