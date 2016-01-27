@@ -28,17 +28,17 @@
 
         var temperature: LiveDataType {
             return LiveData(
-            dataType: .Temperature,
-            jsonKey: "temp",
-            unitNotation: "C"
+                dataType: .Temperature,
+                jsonKey: "temp",
+                unitNotation: "C"
             )
         }
 
         var noise: LiveDataType {
             return LiveData(
-            dataType: .Noise,
-            jsonKey: "noise",
-            unitNotation: "dB"
+                dataType: .Noise,
+                jsonKey: "noise",
+                unitNotation: "dB"
             )
         }
 

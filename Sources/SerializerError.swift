@@ -12,7 +12,7 @@
 /**
     Defines errors that can be thrown in Serializer class.
 */
-enum SerializerError: ErrorType {
+public enum SerializerError: ErrorType {
     
     /**
         This error is thrown when invalid data is parsed.

@@ -37,14 +37,22 @@ extension LiveDataType {
         return dataPoints.first
     }
     
-    /// Insert data point to the `dataPoints` array at index 0.
+    /**
+        Insert data point to the `dataPoints` array at index 0.
+        
+        - parameter point: DataPoint to add
+    */
     public mutating func addDataPoint(point: DataPoint) {
         dataPoints.insert(point, atIndex: 0)
     }
 }
 
 extension LiveDataType {
-    /// Returns full data specifier with value and unit notation, for ex. 3 Mhw
+    /**
+        Returns full data specifier with value and unit notation
+
+        - returns: String data specifier, for ex. `3 Mhw`
+    */
     public func fullDataReadingSpecifier() -> String {
         return "\(self.currentDataPoint) \(self.unitNotation)"
     }
