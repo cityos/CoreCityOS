@@ -43,6 +43,9 @@
 		51D525E71C4FB145005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
 		51D525E81C4FB16F005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
 		51D525E91C4FB170005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
+		51D6DE791C596A19004BFE89 /* SerializerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6DE781C596A19004BFE89 /* SerializerError.swift */; };
+		51D6DE7A1C596A19004BFE89 /* SerializerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6DE781C596A19004BFE89 /* SerializerError.swift */; };
+		51D6DE7B1C596A19004BFE89 /* SerializerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6DE781C596A19004BFE89 /* SerializerError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,7 @@
 		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 		518781891C48F71600C8B962 /* LiveDataTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataTypeTests.swift; sourceTree = "<group>"; };
 		51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataCollectionTests.swift; sourceTree = "<group>"; };
+		51D6DE781C596A19004BFE89 /* SerializerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 				518781871C48F5C200C8B962 /* LiveData.swift */,
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
 				517406B31C426BC400815AF0 /* LiveDataType.swift */,
+				51D6DE781C596A19004BFE89 /* SerializerError.swift */,
 				514A8FA11C482576008EAD30 /* Supporting Files */,
 			);
 			path = Sources;
@@ -461,6 +466,7 @@
 				51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */,
 				51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */,
 				5187818D1C490CA600C8B962 /* LiveData.swift in Sources */,
+				51D6DE7A1C596A19004BFE89 /* SerializerError.swift in Sources */,
 				51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */,
 				51AB74891C4828C600D7C370 /* DataType.swift in Sources */,
 				51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */,
@@ -485,6 +491,7 @@
 				517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */,
 				517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */,
 				518781881C48F5C200C8B962 /* LiveData.swift in Sources */,
+				51D6DE791C596A19004BFE89 /* SerializerError.swift in Sources */,
 				5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */,
 				517406B81C426BC400815AF0 /* FactoryType.swift in Sources */,
 				517406B61C426BC400815AF0 /* DataType.swift in Sources */,
@@ -509,6 +516,7 @@
 				518781721C48471100C8B962 /* FactoryType.swift in Sources */,
 				5187818E1C490CA700C8B962 /* LiveData.swift in Sources */,
 				518781731C48471400C8B962 /* LiveDataType.swift in Sources */,
+				51D6DE7B1C596A19004BFE89 /* SerializerError.swift in Sources */,
 				5187816F1C48470700C8B962 /* DataType.swift in Sources */,
 				518781741C48471700C8B962 /* LiveDataCollectionType.swift in Sources */,
 				518781701C48470B00C8B962 /* DeviceData.swift in Sources */,
