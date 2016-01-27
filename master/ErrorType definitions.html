@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CoreCityOS  Reference</title>
+    <title>ErrorType definitions  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
   <body>
 
 
-    <a title="CoreCityOS  Reference"></a>
+    <a title="ErrorType definitions  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">CoreCityOS Reference</a>
       <img class="carat" src="img/carat.png" />
-      CoreCityOS  Reference
+      ErrorType definitions  Reference
     </p>
 
     <div class="content-wrapper">
@@ -127,73 +127,50 @@
 
         <section class="section">
           <div class="section-content">
+            <h1>ErrorType definitions</h1>
             
-            <p><img src="http://i.imgur.com/wkQEhiu.png" width="300px" height="100px"/></p>
-
-<p><img src="https://img.shields.io/badge/platform-linux%20%7C%20osx%20%7C%20ios-blue.svg" alt="https://img.shields.io/badge/platform-linux%20|%20osx%20|%20ios-blue.svg"> <a href="https://travis-ci.org/cityos/CoreCityOS"><img src="https://travis-ci.org/cityos/CoreCityOS.svg?branch=master" alt="Build Status"></a></p>
-
-<p>CoreCityOS framework is designed as an CityOS open-source data format standard in the new IOT world. </p>
-<a href='#contents' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contents'>Contents:</h2>
-
-<ol>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#contributing">Contributing</a></li>
-<li><a href="#licence">Licence</a></li>
-</ol>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
-
-<ol>
-<li><a href="http://google.com">Swift Package Manager</a></li>
-<li><a href="http://google.com">Carthage</a></li>
-<li><a href="">Embedded Framework</a></li>
-</ol>
-<a href='#swift_package_manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='swift_package_manager'>Swift Package Manager</h3>
-
-<p><a href="https://github.com/apple/swift-package-manager">Swift Package Manager</a> is currently only available for OSX and Linux apps. To build CoreCityOS with Swift Package Manager add it like dependency inside your <code>Package.swift</code> file:</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
-
-<span class="c1">// Example Package.swift file</span>
-<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span> <span class="p">(</span>
-  <span class="nv">name</span><span class="p">:</span> <span class="s">"CityOS"</span><span class="p">,</span>
-  <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
-    <span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/cityos/CoreCityOS.git"</span><span class="p">,</span> <span class="nv">majorVersion</span><span class="p">:</span> <span class="mi">1</span><span class="p">),</span>
-  <span class="p">]</span>
-<span class="p">)</span>
-</code></pre>
-
-<p>After dependency is added to the <code>Package.swift</code>, run following to compile and build the framework:</p>
-<pre class="highlight shell"><code><span class="gp">$ </span>swift build
-</code></pre>
-<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
-
-<p>You can use <a href="https://github.com/Carthage/Carthage">Carthage</a> to install <code>CoreCityOS</code> by adding following to your <code>Cartfile</code>:</p>
-<pre class="highlight shell"><code>github <span class="s2">"cityos/CoreCityOS"</span> ~&gt; 0.0.1
-</code></pre>
-
-<p>After that run following to build framework:</p>
-<pre class="highlight shell"><code><span class="gp">$ </span>carthage update
-</code></pre>
-
-<blockquote>
-<p>Note that you can pass <code>--platform</code> option to the <code>carthage</code>, if you want to build framework only for one platform. Supported Carthage platforms are iOS, OSX and tvOS.</p>
-</blockquote>
-<a href='#manual_installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='manual_installation'>Manual installation</h3>
-
-<p>First add CoreCityOS to your project root folder as a submodule</p>
-<pre class="highlight shell"><code><span class="gp">$ </span>git submodule add https://github.com/cityos/CoreCityOS.git
-</code></pre>
-
-<p>After that drag <code>CoreCityOS.xcodeproj</code> to your project and add it to <strong>Linked Frameworks and Libraries</strong> in your target settings.</p>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
-
-<p>After you have added CoreCityOS by any of the supported methods you can import it with import statement:</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CoreCityOS</span>
-</code></pre>
-
           </div>
         </section>
 
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:O10CoreCityOS15SerializerError"></a>
+                    <a name="//apple_ref/swift/Enum/SerializerError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:O10CoreCityOS15SerializerError">SerializerError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines errors that can be thrown in Serializer class.</p>
+
+                        <a href="Enums/SerializerError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SerializerError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/SerializerError.swift#L15-L32">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
       </article>
     </div>

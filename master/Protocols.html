@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
           CoreCityOS Docs
         </a>
-         (76% documented)
+         (85% documented)
       </p>
     
         <p class="header-col header-col--secondary">
@@ -78,6 +78,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/DeviceData.html">DeviceData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="ErrorType definitions.html">ErrorType definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/SerializerError.html">SerializerError</a>
               </li>
             </ul>
           </li>
@@ -195,17 +203,17 @@ implementations via protocol extensions.</p>
 
     <span class="k">var</span> <span class="nv">temperature</span><span class="p">:</span> <span class="kt">LiveDataType</span> <span class="p">{</span>
         <span class="k">return</span> <span class="kt">LiveData</span><span class="p">(</span>
-        <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Temperature</span><span class="p">,</span>
-        <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"temp"</span><span class="p">,</span>
-        <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"C"</span>
+            <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Temperature</span><span class="p">,</span>
+            <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"temp"</span><span class="p">,</span>
+            <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"C"</span>
         <span class="p">)</span>
     <span class="p">}</span>
 
     <span class="k">var</span> <span class="nv">noise</span><span class="p">:</span> <span class="kt">LiveDataType</span> <span class="p">{</span>
         <span class="k">return</span> <span class="kt">LiveData</span><span class="p">(</span>
-        <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Noise</span><span class="p">,</span>
-        <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"noise"</span><span class="p">,</span>
-        <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"dB"</span>
+            <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Noise</span><span class="p">,</span>
+            <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"noise"</span><span class="p">,</span>
+            <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"dB"</span>
         <span class="p">)</span>
     <span class="p">}</span>
 

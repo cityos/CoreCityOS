@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FactoryType Protocol Reference</title>
+    <title>SerializerError Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -15,9 +15,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Protocol/FactoryType" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/SerializerError" class="dashAnchor"></a>
 
-    <a title="FactoryType Protocol Reference"></a>
+    <a title="SerializerError Enum Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -45,7 +45,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">CoreCityOS Reference</a>
       <img class="carat" src="../img/carat.png" />
-      FactoryType Protocol Reference
+      SerializerError Enum Reference
     </p>
 
     <div class="content-wrapper">
@@ -128,18 +128,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>FactoryType</h1>
+            <h1>SerializerError</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FactoryType</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SerializerError</span><span class="p">:</span> <span class="kt">ErrorType</span></code></pre>
 
                 </div>
               </div>
-            <p>Strutures that adopt <code>FactoryType</code> protocol can be used to create network layer
-of the framework. It should work in conjuction with all other defined data types,
-and always return instances of protocol, rather instances of structures.</p>
-
-<p>All <code>FactoryType</code> structures should have a singleton access object named <code>sharedInstance</code></p>
+            <p>Defines errors that can be thrown in Serializer class.</p>
 
           </div>
         </section>
@@ -151,9 +147,9 @@ and always return instances of protocol, rather instances of structures.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZvP10CoreCityOS11FactoryType14sharedInstanceq_"></a>
-                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvP10CoreCityOS11FactoryType14sharedInstanceq_">sharedInstance</a>
+                    <a name="/s:FO10CoreCityOS15SerializerError17InvalidDataParsedFMS0_FT7messageSS_S0_"></a>
+                    <a name="//apple_ref/swift/Element/InvalidDataParsed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10CoreCityOS15SerializerError17InvalidDataParsedFMS0_FT7messageSS_S0_">InvalidDataParsed</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -161,19 +157,88 @@ and always return instances of protocol, rather instances of structures.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns singleton Factory object</p>
+                        <p>This error is thrown when invalid data is parsed.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedInstance</span><span class="p">:</span> <span class="k">Self</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">InvalidDataParsed</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/FactoryType.swift#L22">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/SerializerError.swift#L20">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO10CoreCityOS15SerializerError16MissingParameterFMS0_FT9parameterSS_S0_"></a>
+                    <a name="//apple_ref/swift/Element/MissingParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10CoreCityOS15SerializerError16MissingParameterFMS0_FT9parameterSS_S0_">MissingParameter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This error is thrown when some parameter is missing from the json body retrieved
+from the backend.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">MissingParameter</span><span class="p">(</span><span class="nv">parameter</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/SerializerError.swift#L26">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO10CoreCityOS15SerializerError18LocationDataNotSetFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/LocationDataNotSet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10CoreCityOS15SerializerError18LocationDataNotSetFMS0_S0_">LocationDataNotSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This error is thrown when there is no location data retrieved.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">LocationDataNotSet</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/SerializerError.swift#L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

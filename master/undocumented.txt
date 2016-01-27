@@ -7,12 +7,6 @@ DataPoint.swift
 LiveDataType.swift
 	public func <~ <T: LiveDataType>(inout lhs: T, rhs: DataPoint)
 	public func <~ <T: LiveDataType>(inout lhs: T, rhs: [DataPoint])
-LiveData.swift
-	public var jsonKey: String
-	public var type: DataType
-	public var unitNotation: String
-	public var dataPoints = [DataPoint]()
-	public init(dataType type: DataType, jsonKey key: String, unitNotation notation: String)
 DeviceData.swift
 	public func == (lhs: DeviceData, rhs: DeviceData) -> Bool
 DataType.swift
