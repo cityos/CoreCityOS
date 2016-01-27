@@ -43,9 +43,6 @@
 		51D525E71C4FB145005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
 		51D525E81C4FB16F005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
 		51D525E91C4FB170005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
-		51D6DE751C57F4F4004BFE89 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6DE741C57F4F4004BFE89 /* Operators.swift */; };
-		51D6DE761C57F4F4004BFE89 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6DE741C57F4F4004BFE89 /* Operators.swift */; };
-		51D6DE771C57F4F4004BFE89 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D6DE741C57F4F4004BFE89 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +90,6 @@
 		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 		518781891C48F71600C8B962 /* LiveDataTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataTypeTests.swift; sourceTree = "<group>"; };
 		51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataCollectionTests.swift; sourceTree = "<group>"; };
-		51D6DE741C57F4F4004BFE89 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +183,6 @@
 				518781871C48F5C200C8B962 /* LiveData.swift */,
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
 				517406B31C426BC400815AF0 /* LiveDataType.swift */,
-				51D6DE741C57F4F4004BFE89 /* Operators.swift */,
 				514A8FA11C482576008EAD30 /* Supporting Files */,
 			);
 			path = Sources;
@@ -463,7 +458,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */,
-				51D6DE761C57F4F4004BFE89 /* Operators.swift in Sources */,
 				51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */,
 				51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */,
 				5187818D1C490CA600C8B962 /* LiveData.swift in Sources */,
@@ -488,7 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				517406B51C426BC400815AF0 /* DataPoint.swift in Sources */,
-				51D6DE751C57F4F4004BFE89 /* Operators.swift in Sources */,
 				517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */,
 				517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */,
 				518781881C48F5C200C8B962 /* LiveData.swift in Sources */,
@@ -513,7 +506,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5187816E1C48470400C8B962 /* DataPoint.swift in Sources */,
-				51D6DE771C57F4F4004BFE89 /* Operators.swift in Sources */,
 				518781721C48471100C8B962 /* FactoryType.swift in Sources */,
 				5187818E1C490CA700C8B962 /* LiveData.swift in Sources */,
 				518781731C48471400C8B962 /* LiveDataType.swift in Sources */,

@@ -43,4 +43,30 @@ class LiveDataTypeTests: XCTestCase {
         
         XCTAssert(humidity.currentDataPoint! == humidity.dataPoints.first!, "dataPoint does not have correct value")
     }
+    
+    func testCustomOperators() {
+        var humidity = LiveData(
+            dataType: .Humidity,
+            jsonKey: "hum",
+            unitNotation: "%"
+        )
+        
+        let dataPoint = DataPoint(value: 20)
+        let anotherDataPoint = DataPoint(value: 40.3)
+        
+        humidity <~ dataPoint
+        humidity <~ anotherDataPoint
+        
+        XCTAssert(humidity.dataPoints.count == 2, "dataPoint count is not correct when using <~ operator to add single data point")
+        
+        var dataPoints = [DataPoint]()
+        
+        for i in 1...10 {
+            dataPoints.append(DataPoint(value: Double(i)))
+        }
+        
+        humidity <~ dataPoints
+        
+        XCTAssert(humidity.dataPoints.count == 12, "dataPoint count is not correct when using <~ operator to add array of data points")
+    }
 }

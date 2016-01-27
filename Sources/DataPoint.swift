@@ -96,3 +96,27 @@ extension DataPoint : CustomDebugStringConvertible {
         return "[\(stamp) = \(self.value)]"
     }
 }
+
+//MARK: Equatable and Comparable implementation
+extension DataPoint : Equatable, Comparable {
+}
+
+public func == (lhs: DataPoint, rhs: DataPoint) -> Bool {
+    return lhs.value == rhs.value
+}
+
+public func < (lhs: DataPoint, rhs: DataPoint) -> Bool {
+    return lhs.value < rhs.value
+}
+
+public func <= (lhs: DataPoint, rhs: DataPoint) -> Bool {
+    return lhs.value <= rhs.value
+}
+
+public func > (lhs: DataPoint, rhs: DataPoint) -> Bool {
+    return lhs.value > rhs.value
+}
+
+public func >= (lhs: DataPoint, rhs: DataPoint) -> Bool {
+    return lhs.value < rhs.value
+}

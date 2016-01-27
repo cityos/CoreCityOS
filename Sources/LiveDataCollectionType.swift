@@ -70,6 +70,7 @@ public protocol LiveDataCollectionType {
     var allReadings: [LiveDataType] { get set }
 }
 
+//MARK: Subscript extensions
 extension LiveDataCollectionType {
     
     public subscript (type: DataType) -> LiveDataType? {

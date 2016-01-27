@@ -68,3 +68,11 @@ public struct DataType {
     /// Noise data type
     public static let Noise = DataType(dataIdentifier: "Noise")
 }
+
+//MARK: Equatable implementation
+extension DataType : Equatable {
+}
+
+public func == (lhs: DataType, rhs: DataType) -> Bool {
+    return lhs.dataIdentifier == rhs.dataIdentifier
+}

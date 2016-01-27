@@ -10,9 +10,9 @@
 //===----------------------------------------------------------------------===//
 
 /**
-    Structures conforming live data type can be used to represent live data.
+Structures conforming live data type can be used to represent live data.
 
-    To see example implementation of this protocol refer to the `LiveData`
+To see example implementation of this protocol refer to the `LiveData`
 */
 public protocol LiveDataType {
     
@@ -47,5 +47,27 @@ extension LiveDataType {
     /// Returns full data specifier with value and unit notation, for ex. 3 Mhw
     public func fullDataReadingSpecifier() -> String {
         return "\(self.currentDataPoint) \(self.unitNotation)"
+    }
+}
+
+//MARK: Custom operator definition
+
+infix operator <~ {
+associativity left
+precedence 100
+}
+
+/**
+    Use operator `<~` to add `DataPoint` to the `dataPoints` array.
+    Operator has the same functionality as the `addDataPoint:` on `LiveDataType`
+    protocol instance
+*/
+public func <~ <T: LiveDataType>(inout lhs: T, rhs: DataPoint) {
+    lhs.addDataPoint(rhs)
+}
+
+public func <~ <T: LiveDataType>(inout lhs: T, rhs: [DataPoint]) {
+    for dataPoint in rhs {
+        lhs.addDataPoint(dataPoint)
     }
 }
