@@ -31,15 +31,19 @@ let package = Package (
 ```
 
 After dependency is added to the `Package.swift`, run following to compile and build the framework:
+
 ```bash
 $ swift build
 ```
 ### Carthage
 You can use [Carthage](https://github.com/Carthage/Carthage) to install `CoreCityOS` by adding following to your `Cartfile`:
+
 ```bash
 github "cityos/CoreCityOS" ~> 0.0.1
 ```
+
 After that run following to build framework:
+
 ```bash
 $ carthage update
 ```
@@ -47,9 +51,11 @@ $ carthage update
 
 ### Manual installation
 First add CoreCityOS to your project root folder as a submodule
+
 ```bash
 $ git submodule add https://github.com/cityos/CoreCityOS.git
 ```
+
 After that drag `CoreCityOS.xcodeproj` to your project and add it to **Linked Frameworks and Libraries** in your target settings.
 
 ## Usage
