@@ -27,3 +27,7 @@
         - "LiveData"
         - "DataType"
         - "DeviceData"
+    -
+      name: "ErrorType definitions"
+      children:
+        - "SerializerError"
