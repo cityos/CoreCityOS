@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
           CoreCityOS Docs
         </a>
-         (85% documented)
+         (87% documented)
       </p>
     
         <p class="header-col header-col--secondary">
@@ -60,6 +60,9 @@
                 <a class="nav-group-task-link" href="Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/DeviceType.html">DeviceType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/FactoryType.html">FactoryType</a>
               </li>
             </ul>
@@ -78,6 +81,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/DeviceData.html">DeviceData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DeviceLocation.html">DeviceLocation</a>
               </li>
             </ul>
           </li>
@@ -255,6 +266,54 @@ implementations via protocol extensions.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:P10CoreCityOS10DeviceType"></a>
+                    <a name="//apple_ref/swift/Protocol/DeviceType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P10CoreCityOS10DeviceType">DeviceType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structures that adopt this protocol can be used to create single device instance,
+that mirrors harware device.</p>
+
+<p><a href='#example_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='example_implementation'>Example implementation</h2>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Lamp</span> <span class="p">:</span> <span class="kt">DeviceType</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">deviceData</span><span class="p">:</span> <span class="kt">DeviceData</span><span class="o">!</span>
+    <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
+    <span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">DeviceLocation</span><span class="o">!</span>
+    <span class="k">var</span> <span class="nv">dataCollection</span> <span class="o">=</span> <span class="kt">CustomLampDataCollection</span><span class="p">()</span></p>
+<pre class="highlight plaintext"><code>&lt;span class="c1"&gt;/// Init methods...&lt;/span&gt;
+</code></pre>
+
+<p><span class="p">}</span>
+</code></pre></p>
+
+                        <a href="Protocols/DeviceType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DeviceType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DeviceType.swift#L26-L40">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:P10CoreCityOS11FactoryType"></a>
                     <a name="//apple_ref/swift/Protocol/FactoryType" class="dashAnchor"></a>
                     <a class="token" href="#/s:P10CoreCityOS11FactoryType">FactoryType</a>
@@ -295,7 +354,7 @@ and always return instances of protocol, rather instances of structures.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-01-27)</p>
+      <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-01-28)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

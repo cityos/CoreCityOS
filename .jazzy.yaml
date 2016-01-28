@@ -19,6 +19,7 @@
       children: 
         - "LiveDataType"
         - "LiveDataCollectionType"
+        - "DeviceType"
         - "FactoryType"
     -
       name: "Structs"
@@ -27,6 +28,10 @@
         - "LiveData"
         - "DataType"
         - "DeviceData"
+    -
+      name: "Classes"
+      children:
+        - "DeviceLocation"
     -
       name: "ErrorType definitions"
       children:

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>&lt;~(_:_:) Function Reference</title>
+    <title>DeviceType Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -15,9 +15,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Function/&lt;~(_:_:)" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/DeviceType" class="dashAnchor"></a>
 
-    <a title="&lt;~(_:_:) Function Reference"></a>
+    <a title="DeviceType Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -45,7 +45,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">CoreCityOS Reference</a>
       <img class="carat" src="../img/carat.png" />
-      &lt;~(_:_:) Function Reference
+      DeviceType Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -139,16 +139,27 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>&lt;~(_:_:)</h1>
+            <h1>DeviceType</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&lt;~</span> <span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">LiveDataType</span><span class="o">&gt;</span><span class="p">(</span><span class="k">inout</span> <span class="nv">lhs</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DataPoint</span><span class="p">)</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DeviceType</span></code></pre>
 
                 </div>
               </div>
-            <p>Use operator <code>&lt;~</code> to add <code><a href="../Structs/DataPoint.html">DataPoint</a></code> to the <code>dataPoints</code> array.
-Operator has the same functionality as the <code>addDataPoint:</code> on <code><a href="../Protocols/LiveDataType.html">LiveDataType</a></code>
-protocol instance</p>
+            <p>Structures that adopt this protocol can be used to create single device instance,
+that mirrors harware device.</p>
+
+<p><a href='#example_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='example_implementation'>Example implementation</h2>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Lamp</span> <span class="p">:</span> <span class="kt">DeviceType</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">deviceData</span><span class="p">:</span> <span class="kt">DeviceData</span><span class="o">!</span>
+    <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
+    <span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">DeviceLocation</span><span class="o">!</span>
+    <span class="k">var</span> <span class="nv">dataCollection</span> <span class="o">=</span> <span class="kt">CustomLampDataCollection</span><span class="p">()</span></p>
+<pre class="highlight plaintext"><code>&lt;span class="c1"&gt;/// Init methods...&lt;/span&gt;
+</code></pre>
+
+<p><span class="p">}</span>
+</code></pre></p>
 
           </div>
         </section>
@@ -160,9 +171,9 @@ protocol instance</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:tZF10CoreCityOSoi2ltuRq_S_12LiveDataType_FTRq_VS_9DataPoint_T_L_1TMq_"></a>
-                    <a name="//apple_ref/swift/Parameter/T" class="dashAnchor"></a>
-                    <a class="token" href="#/s:tZF10CoreCityOSoi2ltuRq_S_12LiveDataType_FTRq_VS_9DataPoint_T_L_1TMq_">T</a>
+                    <a name="/s:vP10CoreCityOS10DeviceType10deviceDataVS_10DeviceData"></a>
+                    <a name="//apple_ref/swift/Property/deviceData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS10DeviceType10deviceDataVS_10DeviceData">deviceData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -170,19 +181,109 @@ protocol instance</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This property is used to store device ID info, such as <code>Schema ID</code> or <code>Model ID</code></p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="o">&lt;~</span> <span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">LiveDataType</span><span class="o">&gt;</span><span class="p">(</span><span class="k">inout</span> <span class="nv">lhs</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DataPoint</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">deviceData</span><span class="p">:</span> <span class="kt">DeviceData</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L0">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DeviceType.swift#L29">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS10DeviceType12creationDateGSqCSo6NSDate_"></a>
+                    <a name="//apple_ref/swift/Property/creationDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS10DeviceType12creationDateGSqCSo6NSDate_">creationDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creation date of the device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DeviceType.swift#L32">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS10DeviceType8locationCS_14DeviceLocation"></a>
+                    <a name="//apple_ref/swift/Property/location" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS10DeviceType8locationCS_14DeviceLocation">location</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">DeviceLocation</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DeviceType.swift#L35">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10CoreCityOS10DeviceType14dataCollectionPS_22LiveDataCollectionType_"></a>
+                    <a name="//apple_ref/swift/Property/dataCollection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10CoreCityOS10DeviceType14dataCollectionPS_22LiveDataCollectionType_">dataCollection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Structure that adopts <code><a href="../Protocols/LiveDataCollectionType.html">LiveDataCollectionType</a></code> protocol that is used to record device data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dataCollection</span><span class="p">:</span> <span class="kt">LiveDataCollectionType</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/DeviceType.swift#L38">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
