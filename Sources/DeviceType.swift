@@ -19,7 +19,7 @@
         var location: DeviceLocation!
         var dataCollection = CustomLampDataCollection()
 
-        /// Init methods...
+        // Init methods...
     }
     ```
 */
