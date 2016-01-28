@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		511A5E651C5A5DA7002C0009 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A5E641C5A5DA7002C0009 /* DeviceType.swift */; };
+		511A5E661C5A5DA7002C0009 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A5E641C5A5DA7002C0009 /* DeviceType.swift */; };
+		511A5E671C5A5DA7002C0009 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A5E641C5A5DA7002C0009 /* DeviceType.swift */; };
+		511A5E691C5A5E3E002C0009 /* DeviceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A5E681C5A5E3E002C0009 /* DeviceLocation.swift */; };
+		511A5E6A1C5A5E3E002C0009 /* DeviceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A5E681C5A5E3E002C0009 /* DeviceLocation.swift */; };
+		511A5E6B1C5A5E3E002C0009 /* DeviceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511A5E681C5A5E3E002C0009 /* DeviceLocation.swift */; };
 		514A8F9F1C48254E008EAD30 /* CoreCityOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 517406A91C426B2D00815AF0 /* CoreCityOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		514A8FA01C482555008EAD30 /* CoreCityOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 517406A91C426B2D00815AF0 /* CoreCityOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		514A8FAD1C482692008EAD30 /* CoreCityOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514A8F971C482349008EAD30 /* CoreCityOS.framework */; };
@@ -73,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		511A5E641C5A5DA7002C0009 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		511A5E681C5A5E3E002C0009 /* DeviceLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceLocation.swift; sourceTree = "<group>"; };
 		514A8F971C482349008EAD30 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		514A8FA21C482592008EAD30 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		514A8FA81C482692008EAD30 /* CoreCityOS tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +191,8 @@
 				517406AE1C426BC400815AF0 /* DataPoint.swift */,
 				517406AF1C426BC400815AF0 /* DataType.swift */,
 				5171E6ED1C4702480039D43C /* DeviceData.swift */,
+				511A5E681C5A5E3E002C0009 /* DeviceLocation.swift */,
+				511A5E641C5A5DA7002C0009 /* DeviceType.swift */,
 				517406B11C426BC400815AF0 /* FactoryType.swift */,
 				518781871C48F5C200C8B962 /* LiveData.swift */,
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
@@ -453,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if [ \"$CONFIGURATION\" == \"Debug\" ]; then\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -468,6 +478,8 @@
 				5187818D1C490CA600C8B962 /* LiveData.swift in Sources */,
 				51D6DE7A1C596A19004BFE89 /* SerializerError.swift in Sources */,
 				51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */,
+				511A5E6A1C5A5E3E002C0009 /* DeviceLocation.swift in Sources */,
+				511A5E661C5A5DA7002C0009 /* DeviceType.swift in Sources */,
 				51AB74891C4828C600D7C370 /* DataType.swift in Sources */,
 				51AB748A1C4828C800D7C370 /* DeviceData.swift in Sources */,
 			);
@@ -493,6 +505,8 @@
 				518781881C48F5C200C8B962 /* LiveData.swift in Sources */,
 				51D6DE791C596A19004BFE89 /* SerializerError.swift in Sources */,
 				5171E6EE1C4702480039D43C /* DeviceData.swift in Sources */,
+				511A5E691C5A5E3E002C0009 /* DeviceLocation.swift in Sources */,
+				511A5E651C5A5DA7002C0009 /* DeviceType.swift in Sources */,
 				517406B81C426BC400815AF0 /* FactoryType.swift in Sources */,
 				517406B61C426BC400815AF0 /* DataType.swift in Sources */,
 			);
@@ -518,6 +532,8 @@
 				518781731C48471400C8B962 /* LiveDataType.swift in Sources */,
 				51D6DE7B1C596A19004BFE89 /* SerializerError.swift in Sources */,
 				5187816F1C48470700C8B962 /* DataType.swift in Sources */,
+				511A5E6B1C5A5E3E002C0009 /* DeviceLocation.swift in Sources */,
+				511A5E671C5A5DA7002C0009 /* DeviceType.swift in Sources */,
 				518781741C48471700C8B962 /* LiveDataCollectionType.swift in Sources */,
 				518781701C48470B00C8B962 /* DeviceData.swift in Sources */,
 			);
