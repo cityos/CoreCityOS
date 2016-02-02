@@ -37,7 +37,7 @@ class LiveDataTypeTests: XCTestCase {
         )
         
         for i in 1...10 {
-            let dataPoint = DataPoint(value: Double(i))
+            let dataPoint = DataPoint<Int>(value: i)
             humidity.addDataPoint(dataPoint)
         }
         
@@ -59,7 +59,7 @@ class LiveDataTypeTests: XCTestCase {
         
         XCTAssert(humidity.dataPoints.count == 2, "dataPoint count is not correct when using <~ operator to add single data point")
         
-        var dataPoints = [DataPoint]()
+        var dataPoints = [DataPoint<Double>]()
         
         for i in 1...10 {
             dataPoints.append(DataPoint(value: Double(i)))

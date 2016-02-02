@@ -22,7 +22,7 @@ public struct LiveData: LiveDataType {
     public var unitNotation: String
     
     /// All data points
-    public var dataPoints = [DataPoint]()
+    public var dataPoints = [DataPointType]()
     
     /**
         Creates `LiveData` instance

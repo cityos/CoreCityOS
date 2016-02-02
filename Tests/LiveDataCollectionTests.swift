@@ -59,8 +59,8 @@ class LiveDataCollectionTests: XCTestCase {
     }
     
     func testSubscriptsSet() {
-        testDataCollection[.Temperature]?.addDataPoint(DataPoint(value: 20))
-        testDataCollection[.Temperature]?.addDataPoint(DataPoint(value: 40))
+        testDataCollection[.Temperature]?.addDataPoint(DataPoint<Int>(value: 20))
+        testDataCollection[.Temperature]?.addDataPoint(DataPoint<Double>(value: 40))
         
         XCTAssert(testDataCollection[.Temperature]?.currentDataPoint?.value == 40, "Current data point should be equal to 20")
         XCTAssert(testDataCollection[.Temperature]?.dataPoints.count == 2, "Data points count should be 2")

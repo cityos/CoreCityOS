@@ -26,14 +26,14 @@ public protocol LiveDataType {
     var unitNotation: String { get }
     
     /// Holds all readings for data type
-    var dataPoints: [DataPoint] { get set }
+    var dataPoints: [DataPointType] { get set }
 }
 
 extension LiveDataType {
     
     /// Returns current data point from the `dataPoints` array.
     /// The newest data point is always the first element in the array
-    public var currentDataPoint: DataPoint? {
+    public var currentDataPoint: DataPointType? {
         return dataPoints.first
     }
     
@@ -42,7 +42,7 @@ extension LiveDataType {
         
         - parameter point: DataPoint to add
     */
-    public mutating func addDataPoint(point: DataPoint) {
+    public mutating func addDataPoint(point: DataPointType) {
         dataPoints.insert(point, atIndex: 0)
     }
 }
@@ -70,11 +70,11 @@ precedence 100
     Operator has the same functionality as the `addDataPoint:` on `LiveDataType`
     protocol instance
 */
-public func <~ <T: LiveDataType>(inout lhs: T, rhs: DataPoint) {
+public func <~ <T: LiveDataType, U: DataPointType>(inout lhs: T, rhs: U) {
     lhs.addDataPoint(rhs)
 }
 
-public func <~ <T: LiveDataType>(inout lhs: T, rhs: [DataPoint]) {
+public func <~ <T: LiveDataType, U: DataPointType>(inout lhs: T, rhs: [U]) {
     for dataPoint in rhs {
         lhs.addDataPoint(dataPoint)
     }

@@ -12,6 +12,20 @@ import class Foundation.NSDate
 import class Foundation.NSDateFormatter
 import typealias Foundation.NSTimeInterval
 
+public protocol DataPointValueType {
+    var hashValue: Int { get }
+    var description: String { get }
+}
+
+public protocol DataPointType {
+    var value: DataPointValueType { get }
+    var timestamp: NSDate { get }
+}
+
+extension Double: DataPointValueType {}
+extension Int: DataPointValueType {}
+extension Float: DataPointValueType {}
+
 /**
     Single arbitary immutable data point with timestamp information. Data points act as a
     data model inside `LiveDataType`. `DataPoint` can be initalized with value only, in which
@@ -19,15 +33,15 @@ import typealias Foundation.NSTimeInterval
  
     `DataPoint` structures adopt `Equatable` and `Comparable` protocols.
 */
-public struct DataPoint {
+public struct DataPoint<T: DataPointValueType>: DataPointType {
     
-    public typealias DataPointValue = Double
+    public typealias DataPointValue = T
     
     /// Data point reation date timestamp
     public let timestamp: NSDate
     
     /// Data reading value
-    public var value: Double
+    public var value: DataPointValueType
     
     /**
      Initializes data reading with value and time stamp
@@ -62,7 +76,6 @@ public struct DataPoint {
         self.timestamp = NSDate()
     }
 }
-
 
 //MARK: Custom String Convertible implementation
 extension DataPoint : CustomStringConvertible {
@@ -101,22 +114,30 @@ extension DataPoint : CustomDebugStringConvertible {
 extension DataPoint : Equatable, Comparable {
 }
 
-public func == (lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value == rhs.value
+public func == <T: DataPointValueType>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value.hashValue == rhs.value.hashValue
 }
 
-public func < (lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value < rhs.value
+public func < <T: DataPointValueType>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value.hashValue < rhs.value.hashValue
 }
 
-public func <= (lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value <= rhs.value
+public func <= <T: DataPointValueType>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value.hashValue <= rhs.value.hashValue
 }
 
-public func > (lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value > rhs.value
+public func > <T: DataPointValueType>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value.hashValue > rhs.value.hashValue
 }
 
-public func >= (lhs: DataPoint, rhs: DataPoint) -> Bool {
-    return lhs.value < rhs.value
+public func >= <T: DataPointValueType>(lhs: DataPoint<T>, rhs: DataPoint<T>) -> Bool {
+    return lhs.value.hashValue < rhs.value.hashValue
+}
+
+public func == (lhs: DataPointType, rhs: DataPointType) -> Bool {
+    return lhs.value.hashValue == rhs.value.hashValue
+}
+
+public func == <T: DataPointValueType>(lhs: DataPointValueType, rhs: T) -> Bool {
+    return lhs.hashValue == rhs.hashValue
 }
