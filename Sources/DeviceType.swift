@@ -6,6 +6,8 @@
 //  Copyright © 2016 CityOS. All rights reserved.
 //
 
+import class Foundation.NSDate
+
 /**
     Structures that adopt this protocol can be used to create single device instance,
     that mirrors harware device.
