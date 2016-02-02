@@ -9,6 +9,8 @@
 //
 //===----------------------------------------------------------------------===//
 
+import class Foundation.NSDate
+
 /**
     Structures that adopt `LiveDataCollectionType` protocol can be used to
     represent arbitary collection of `LiveDataType` data readings. Since
