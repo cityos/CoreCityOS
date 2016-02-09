@@ -20,6 +20,7 @@
         - "LiveDataType"
         - "LiveDataCollectionType"
         - "DeviceType"
+        - "ZoneType"
         - "FactoryType"
     -
       name: "Structs"
