@@ -46,6 +46,9 @@
 		51AB748C1C4828CE00D7C370 /* FactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B11C426BC400815AF0 /* FactoryType.swift */; };
 		51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */; };
 		51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517406B31C426BC400815AF0 /* LiveDataType.swift */; };
+		51CF67B81C6A7DFE00829D31 /* ZoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF67B71C6A7DFE00829D31 /* ZoneType.swift */; };
+		51CF67B91C6A7DFE00829D31 /* ZoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF67B71C6A7DFE00829D31 /* ZoneType.swift */; };
+		51CF67BA1C6A7DFE00829D31 /* ZoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF67B71C6A7DFE00829D31 /* ZoneType.swift */; };
 		51D525E71C4FB145005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
 		51D525E81C4FB16F005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
 		51D525E91C4FB170005E4890 /* LiveDataCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */; };
@@ -100,6 +103,7 @@
 		518781791C4847E200C8B962 /* CoreCityOS OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
 		518781891C48F71600C8B962 /* LiveDataTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataTypeTests.swift; sourceTree = "<group>"; };
+		51CF67B71C6A7DFE00829D31 /* ZoneType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneType.swift; sourceTree = "<group>"; };
 		51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataCollectionTests.swift; sourceTree = "<group>"; };
 		51D6DE781C596A19004BFE89 /* SerializerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,7 @@
 				517406B21C426BC400815AF0 /* LiveDataCollectionType.swift */,
 				517406B31C426BC400815AF0 /* LiveDataType.swift */,
 				51D6DE781C596A19004BFE89 /* SerializerError.swift */,
+				51CF67B71C6A7DFE00829D31 /* ZoneType.swift */,
 				514A8FA11C482576008EAD30 /* Supporting Files */,
 			);
 			path = Sources;
@@ -208,8 +213,8 @@
 			children = (
 				517406C41C426DF200815AF0 /* Info.plist */,
 				517406C21C426DF200815AF0 /* DataPointTests.swift */,
-				518781891C48F71600C8B962 /* LiveDataTypeTests.swift */,
 				51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */,
+				518781891C48F71600C8B962 /* LiveDataTypeTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51AB74881C4828BA00D7C370 /* DataPoint.swift in Sources */,
+				51CF67B91C6A7DFE00829D31 /* ZoneType.swift in Sources */,
 				51AB748D1C4828D000D7C370 /* LiveDataCollectionType.swift in Sources */,
 				51AB748E1C4828D300D7C370 /* LiveDataType.swift in Sources */,
 				5187818D1C490CA600C8B962 /* LiveData.swift in Sources */,
@@ -500,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517406B51C426BC400815AF0 /* DataPoint.swift in Sources */,
+				51CF67B81C6A7DFE00829D31 /* ZoneType.swift in Sources */,
 				517406B91C426BC400815AF0 /* LiveDataCollectionType.swift in Sources */,
 				517406BA1C426BC400815AF0 /* LiveDataType.swift in Sources */,
 				518781881C48F5C200C8B962 /* LiveData.swift in Sources */,
@@ -527,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5187816E1C48470400C8B962 /* DataPoint.swift in Sources */,
+				51CF67BA1C6A7DFE00829D31 /* ZoneType.swift in Sources */,
 				518781721C48471100C8B962 /* FactoryType.swift in Sources */,
 				5187818E1C490CA700C8B962 /* LiveData.swift in Sources */,
 				518781731C48471400C8B962 /* LiveDataType.swift in Sources */,
