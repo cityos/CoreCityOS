@@ -19,7 +19,23 @@ import class Foundation.NSDate
  Zones are useful when you want to read aggregated data from devices, or when you want
  to perform specific operation on all devices that the zone manages.
  
- All devices are
+ ## Example implementation
+ 
+ ```swift
+ struct MyZone: ZoneType {
+    var zoneID: String
+    var name: String
+    var creationDate = NSDate()
+    var devices = [DeviceType]
+ 
+    init(zoneID: String, name: String, devices: DeviceType... {
+        self.zoneID = zoneID
+        self.name = name
+        self.devices = devices
+    }
+ }
+ ```
+ 
  */
 public protocol ZoneType {
     
