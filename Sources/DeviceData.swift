@@ -1,15 +1,13 @@
-//===----------------------------------------------------------------------===//
-//
-// This source file is part of the cityos.io CoreCityOS open source project
-//
-// Copyright (c) 2016 CityOS LLC
-// Licensed under Apache License v2.0
-//
-// See https://cityos.io/ios/LICENCE.txt for license information
-//
-//===----------------------------------------------------------------------===//
+/*
+This source file is part of the CoreCityOS open source project
 
-/** 
+Copyright (c) 2016 CityOS LLC
+Licensed under Apache License v2.0
+
+See https://cityos.io/ios/LICENCE.txt for license information
+*/
+
+/**
     Describes info data for one hardware device. Most common data is:
 
     * `id` - id of the device, most commonly ipv6 address

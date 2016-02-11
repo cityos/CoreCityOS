@@ -1,10 +1,11 @@
-//
-//  DeviceLocation.swift
-//  CoreCityOS
-//
-//  Created by Said Sikira on 1/28/16.
-//  Copyright © 2016 CityOS. All rights reserved.
-//
+/*
+This source file is part of the CoreCityOS open source project
+
+Copyright (c) 2016 CityOS LLC
+Licensed under Apache License v2.0
+
+See https://cityos.io/ios/LICENCE.txt for license information
+*/
 
 /**
     `DeviceLocation` class is used for managing geographical location of a device.

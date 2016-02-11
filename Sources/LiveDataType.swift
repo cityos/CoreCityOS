@@ -1,13 +1,11 @@
-//===----------------------------------------------------------------------===//
-//
-// This source file is part of the cityos.io CoreCityOS open source project
-//
-// Copyright (c) 2016 CityOS LLC
-// Licensed under Apache License v2.0
-//
-// See https://cityos.io/ios/LICENCE.txt for license information
-//
-//===----------------------------------------------------------------------===//
+/*
+This source file is part of the CoreCityOS open source project
+
+Copyright (c) 2016 CityOS LLC
+Licensed under Apache License v2.0
+
+See https://cityos.io/ios/LICENCE.txt for license information
+*/
 
 /**
 Structures conforming live data type can be used to represent live data.
@@ -55,6 +53,11 @@ extension LiveDataType {
     */
     public func fullDataReadingSpecifier() -> String {
         return "\(self.currentDataPoint) \(self.unitNotation)"
+    }
+    
+    /// Returns date from the last data point that is added to `dataPoints` array
+    public var lastUpdateDate: NSDate? {
+        return currentDataPoint?.timestamp
     }
 }
 
