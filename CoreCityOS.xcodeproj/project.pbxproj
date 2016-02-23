@@ -99,6 +99,7 @@
 		517406C01C426DF200815AF0 /* CoreCityOS iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		517406C21C426DF200815AF0 /* DataPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointTests.swift; sourceTree = "<group>"; };
 		517406C41C426DF200815AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5176C9581C7C526E00E876A9 /* CoreCityOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoreCityOS.playground; sourceTree = "<group>"; };
 		518781641C48467F00C8B962 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518781791C4847E200C8B962 /* CoreCityOS OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
@@ -170,6 +171,7 @@
 		517406931C426B0A00815AF0 = {
 			isa = PBXGroup;
 			children = (
+				5176C9581C7C526E00E876A9 /* CoreCityOS.playground */,
 				517406A81C426B2D00815AF0 /* Sources */,
 				517406C11C426DF200815AF0 /* Tests */,
 				5174069E1C426B0A00815AF0 /* Products */,
