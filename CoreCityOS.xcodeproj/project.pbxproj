@@ -99,7 +99,6 @@
 		517406C01C426DF200815AF0 /* CoreCityOS iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		517406C21C426DF200815AF0 /* DataPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPointTests.swift; sourceTree = "<group>"; };
 		517406C41C426DF200815AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5176C9581C7C526E00E876A9 /* CoreCityOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoreCityOS.playground; sourceTree = "<group>"; };
 		518781641C48467F00C8B962 /* CoreCityOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreCityOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518781791C4847E200C8B962 /* CoreCityOS OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreCityOS OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518781871C48F5C200C8B962 /* LiveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveData.swift; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		51CF67B71C6A7DFE00829D31 /* ZoneType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneType.swift; sourceTree = "<group>"; };
 		51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveDataCollectionTests.swift; sourceTree = "<group>"; };
 		51D6DE781C596A19004BFE89 /* SerializerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializerError.swift; sourceTree = "<group>"; };
+		B315A1541CA1F529002D0284 /* CoreCityOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoreCityOS.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 		517406931C426B0A00815AF0 = {
 			isa = PBXGroup;
 			children = (
-				5176C9581C7C526E00E876A9 /* CoreCityOS.playground */,
+				B315A1531CA1F529002D0284 /* Playground */,
 				517406A81C426B2D00815AF0 /* Sources */,
 				517406C11C426DF200815AF0 /* Tests */,
 				5174069E1C426B0A00815AF0 /* Products */,
@@ -219,6 +219,14 @@
 				518781891C48F71600C8B962 /* LiveDataTypeTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		B315A1531CA1F529002D0284 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				B315A1541CA1F529002D0284 /* CoreCityOS.playground */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
