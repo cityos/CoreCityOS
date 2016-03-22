@@ -10,28 +10,28 @@ See https://cityos.io/ios/LICENCE.txt for license information
 import class Foundation.NSDate
 
 /**
- Structures that adopt this protocol can be used to represent geographical zones that 
- encapsulate all devices in that specifics zone. Devices can be members of more than 
- one zone.
+    Structures that adopt this protocol can be used to represent geographical zones that
+    encapsulate all devices in that specifics zone. Devices can be members of more than
+    one zone.
  
- Zones are useful when you want to read aggregated data from devices, or when you want
- to perform specific operation on all devices that the zone manages.
+    Zones are useful when you want to read aggregated data from devices, or when you want
+    to perform specific operation on all devices that the zone manages.
  
- ## Example implementation
- 
- ```swift
- struct MyZone: ZoneType {
-    var zoneID: String
-    var name: String
-    var creationDate = NSDate()
-    var devices = [DeviceType]
- 
-    init(zoneID: String, name: String, devices: DeviceType... {
-        self.zoneID = zoneID
-        self.name = name
-        self.devices = devices
+    ### Example implementation of the protocol
+
+    ```swift
+    struct MyZone: ZoneType {
+        var zoneID: String
+        var name: String
+        var creationDate = NSDate()
+        var devices = [DeviceType]
+
+        init(zoneID: String, name: String, devices: DeviceType...) {
+            self.zoneID = zoneID
+            self.name = name
+            self.devices = devices
+        }
     }
- }
  ```
  
  */

@@ -1,16 +1,16 @@
 /*
-This source file is part of the CoreCityOS open source project
+    This source file is part of the CoreCityOS open source project
 
-Copyright (c) 2016 CityOS LLC
-Licensed under Apache License v2.0
+    Copyright (c) 2016 CityOS LLC
+    Licensed under Apache License v2.0
 
-See https://cityos.io/ios/LICENCE.txt for license information
+    See https://cityos.io/ios/LICENCE.txt for license information
 */
 
 /**
     `DeviceLocation` class is used for managing geographical location of a device.
     
-    - Warning: Some methods that rely on CoreLocation framework may not be available
+    - Warning: Some methods that rely on `CoreLocation` framework may not be available
     on Linux systems
 */
 public class DeviceLocation {

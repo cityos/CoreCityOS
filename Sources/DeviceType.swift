@@ -1,10 +1,10 @@
 /*
-This source file is part of the CoreCityOS open source project
+    This source file is part of the CoreCityOS open source project
 
-Copyright (c) 2016 CityOS LLC
-Licensed under Apache License v2.0
+    Copyright (c) 2016 CityOS LLC
+    Licensed under Apache License v2.0
 
-See https://cityos.io/ios/LICENCE.txt for license information
+    See https://cityos.io/ios/LICENCE.txt for license information
 */
 
 import class Foundation.NSDate
@@ -13,16 +13,15 @@ import class Foundation.NSDate
     Structures that adopt this protocol can be used to create single device instance,
     that mirrors harware device.
     
-    ## Example implementation
+    ### Example implementation
     
     ```swift
-    struct Lamp : DeviceType {
-        var deviceData: DeviceData!
+    struct Lamp: DeviceType {
+        var deviceData: DeviceData = DeviceData(deviceID: "abc-123")
         var creationDate = NSDate()
-        var location: DeviceLocation!
+        var location: DeviceLocation?
         var dataCollection = CustomLampDataCollection()
 
-        // Init methods...
     }
     ```
 */
@@ -35,7 +34,7 @@ public protocol DeviceType {
     var creationDate: NSDate? { get set }
     
     /// Device location
-    var location: DeviceLocation { get }
+    var location: DeviceLocation? { get }
     
     /// Structure that adopts `LiveDataCollectionType` protocol that is used to record device data
     var dataCollection: LiveDataCollectionType { get set }

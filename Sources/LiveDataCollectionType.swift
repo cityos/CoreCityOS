@@ -18,7 +18,7 @@ import class Foundation.NSDate
     Each structure that implements this protocol gets all subscript
     implementations via protocol extensions.
 
-    Example protocol implementation:
+    ### Example protocol implementation:
 
     ```swift
     class TestDataCollection: LiveDataCollectionType {
