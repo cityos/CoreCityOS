@@ -116,7 +116,7 @@
                 <a class="nav-group-task-link" href="Functions/&lt;~(_:_:).html">&lt;~(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Functions.html#/s:ZF10CoreCityOSoi2ltuRq_S_12LiveDataType_FTRq_GSaVS_9DataPoint__T_">&lt;~(_:_:)</a>
+                <a class="nav-group-task-link" href="Other Functions.html#/s:ZF10CoreCityOSoi2ltuRxS_12LiveDataTyperFTRxGSaVS_9DataPoint__T_">&lt;~(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Other Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_10DeviceDataS0__Sb">==(_:_:)</a>
@@ -178,7 +178,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L17-L30">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataType.swift#L15-L28">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -208,38 +208,38 @@ each device can use different schema for its data points,
 <p>Each structure that implements this protocol gets all subscript
 implementations via protocol extensions.</p>
 
-<p>Example protocol implementation:</p>
-
+<p><a href='#example_protocol_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='example_protocol_implementation'>Example protocol implementation:</h3>
 <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">TestDataCollection</span><span class="p">:</span> <span class="kt">LiveDataCollectionType</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">deviceData</span> <span class="o">=</span> <span class="kt">DeviceData</span><span class="p">(</span><span class="nv">deviceID</span><span class="p">:</span> <span class="s">"test-device"</span><span class="p">)</span>
+    <span class="k">var</span> <span class="nv">deviceData</span> <span class="o">=</span> <span class="kt">DeviceData</span><span class="p">(</span><span class="nv">deviceID</span><span class="p">:</span> <span class="s"><q>test-device</q></span><span class="p">)</span>
     <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
-    <span class="k">var</span> <span class="nv">allReadings</span> <span class="o">=</span> <span class="p">[</span><span class="kt">LiveDataType</span><span class="p">]()</span>
+    <span class="k">var</span> <span class="nv">allReadings</span> <span class="o">=</span> <span class="p"><a href=""></span><span class="kt">LiveDataType</span><span class="p"></a></span></p>
+<pre class="highlight plaintext"><code>&lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;temperature&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;LiveDataType&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kt"&gt;LiveData&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+        &lt;span class="nv"&gt;dataType&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;Temperature&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nv"&gt;jsonKey&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"temp"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nv"&gt;unitNotation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"C"&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 
-    <span class="k">var</span> <span class="nv">temperature</span><span class="p">:</span> <span class="kt">LiveDataType</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="kt">LiveData</span><span class="p">(</span>
-            <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Temperature</span><span class="p">,</span>
-            <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"temp"</span><span class="p">,</span>
-            <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"C"</span>
-        <span class="p">)</span>
-    <span class="p">}</span>
+&lt;span class="k"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;noise&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kt"&gt;LiveDataType&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kt"&gt;LiveData&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+        &lt;span class="nv"&gt;dataType&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kt"&gt;Noise&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nv"&gt;jsonKey&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"noise"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="nv"&gt;unitNotation&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"dB"&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 
-    <span class="k">var</span> <span class="nv">noise</span><span class="p">:</span> <span class="kt">LiveDataType</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="kt">LiveData</span><span class="p">(</span>
-            <span class="nv">dataType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Noise</span><span class="p">,</span>
-            <span class="nv">jsonKey</span><span class="p">:</span> <span class="s">"noise"</span><span class="p">,</span>
-            <span class="nv">unitNotation</span><span class="p">:</span> <span class="s">"dB"</span>
-        <span class="p">)</span>
-    <span class="p">}</span>
-
-    <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">self</span><span class="o">.</span><span class="n">allReadings</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="n">temperature</span><span class="p">,</span>
-            <span class="n">noise</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
+&lt;span class="nf"&gt;init&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;allReadings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+        &lt;span class="n"&gt;temperature&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="n"&gt;noise&lt;/span&gt;
+    &lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 </code></pre>
+
+<p><span class="p">}</span></p>
+
+<p></code></pre></p>
 
 <p>Once you define conforming structure, you can initialize it like following:</p>
 
@@ -257,7 +257,7 @@ implementations via protocol extensions.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataCollectionType.swift#L63-L73">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/LiveDataCollectionType.swift#L61-L71">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -282,14 +282,12 @@ implementations via protocol extensions.</p>
                         <p>Structures that adopt this protocol can be used to create single device instance,
 that mirrors harware device.</p>
 
-<p><a href='#example_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='example_implementation'>Example implementation</h2>
-<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Lamp</span> <span class="p">:</span> <span class="kt">DeviceType</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">deviceData</span><span class="p">:</span> <span class="kt">DeviceData</span><span class="o">!</span>
+<p><a href='#example_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='example_implementation'>Example implementation</h3>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Lamp</span><span class="p">:</span> <span class="kt">DeviceType</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">deviceData</span><span class="p">:</span> <span class="kt">DeviceData</span> <span class="o">=</span> <span class="kt">DeviceData</span><span class="p">(</span><span class="nv">deviceID</span><span class="p">:</span> <span class="s"><q>abc-123</q></span><span class="p">)</span>
     <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
-    <span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">DeviceLocation</span><span class="o">!</span>
+    <span class="k">var</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">DeviceLocation</span><span class="p">?</span>
     <span class="k">var</span> <span class="nv">dataCollection</span> <span class="o">=</span> <span class="kt">CustomLampDataCollection</span><span class="p">()</span></p>
-<pre class="highlight plaintext"><code>&lt;span class="c1"&gt;// Init methods...&lt;/span&gt;
-</code></pre>
 
 <p><span class="p">}</span>
 </code></pre></p>
@@ -327,27 +325,28 @@ that mirrors harware device.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Structures that adopt this protocol can be used to represent geographical zones that 
-encapsulate all devices in that specifics zone. Devices can be members of more than 
-one zone.</p>
+                        <p>Structures that adopt this protocol can be used to represent geographical zones that
+   encapsulate all devices in that specifics zone. Devices can be members of more than
+   one zone.</p>
 
 <p>Zones are useful when you want to read aggregated data from devices, or when you want
-to perform specific operation on all devices that the zone manages.</p>
+   to perform specific operation on all devices that the zone manages.</p>
 
-<p><a href='#example_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='example_implementation'>Example implementation</h2>
-<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyZone</span><span class="p">:</span> <span class="kt">ZoneType</span> <span class="p">{</span>
-   <span class="k">var</span> <span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span>
-   <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
-   <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
-   <span class="k">var</span> <span class="nv">devices</span> <span class="o">=</span> <span class="p">[</span><span class="kt">DeviceType</span><span class="p">]</span></p>
+<p>### Example implementation of the protocol</p>
 
-<p><span class="nf">init</span><span class="p">(</span><span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">devices</span><span class="p">:</span> <span class="kt">DeviceType</span><span class="o">...</span> <span class="p">{</span>
-       <span class="k">self</span><span class="o">.</span><span class="n">zoneID</span> <span class="o">=</span> <span class="n">zoneID</span>
-       <span class="k">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-       <span class="k">self</span><span class="o">.</span><span class="n">devices</span> <span class="o">=</span> <span class="n">devices</span>
+<pre class="highlight swift"><code>   <span class="kd">struct</span> <span class="kt">MyZone</span><span class="p">:</span> <span class="kt">ZoneType</span> <span class="p">{</span>
+       <span class="k">var</span> <span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span>
+       <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+       <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
+       <span class="k">var</span> <span class="nv">devices</span> <span class="o">=</span> <span class="p">[</span><span class="kt">DeviceType</span><span class="p">]</span>
+
+       <span class="nf">init</span><span class="p">(</span><span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">devices</span><span class="p">:</span> <span class="kt">DeviceType</span><span class="o">...</span><span class="p">)</span> <span class="p">{</span>
+           <span class="k">self</span><span class="o">.</span><span class="n">zoneID</span> <span class="o">=</span> <span class="n">zoneID</span>
+           <span class="k">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+           <span class="k">self</span><span class="o">.</span><span class="n">devices</span> <span class="o">=</span> <span class="n">devices</span>
+       <span class="p">}</span>
    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></p>
+</code></pre>
 
                         <a href="Protocols/ZoneType.html" class="slightly-smaller">See more</a>
                       </div>
@@ -360,7 +359,7 @@ to perform specific operation on all devices that the zone manages.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L40-L53">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L38-L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -399,7 +398,7 @@ and always return instances of protocol, rather instances of structures.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/FactoryType.swift#L19-L23">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/FactoryType.swift#L17-L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -412,7 +411,7 @@ and always return instances of protocol, rather instances of structures.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-02-09)</p>
+      <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-03-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

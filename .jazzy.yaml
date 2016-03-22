@@ -3,7 +3,7 @@
     - "CoreCityOS/CoreCityOS.xcodeproj"
     - "-scheme"
     - "CoreCityOS iOS"
-  swift_version: "2.1.1"
+  swift_version: "2.2"
   author_name: "CityOS"
   author_url: "http://cityos.io"
   module_name: "CoreCityOS"

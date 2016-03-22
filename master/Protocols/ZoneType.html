@@ -117,7 +117,7 @@
                 <a class="nav-group-task-link" href="../Functions/&lt;~(_:_:).html">&lt;~(_:_:)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other Functions.html#/s:ZF10CoreCityOSoi2ltuRq_S_12LiveDataType_FTRq_GSaVS_9DataPoint__T_">&lt;~(_:_:)</a>
+                <a class="nav-group-task-link" href="../Other Functions.html#/s:ZF10CoreCityOSoi2ltuRxS_12LiveDataTyperFTRxGSaVS_9DataPoint__T_">&lt;~(_:_:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Other Functions.html#/s:ZF10CoreCityOSoi2eeFTVS_10DeviceDataS0__Sb">==(_:_:)</a>
@@ -149,27 +149,28 @@
 
                 </div>
               </div>
-            <p>Structures that adopt this protocol can be used to represent geographical zones that 
-encapsulate all devices in that specifics zone. Devices can be members of more than 
-one zone.</p>
+            <p>Structures that adopt this protocol can be used to represent geographical zones that
+   encapsulate all devices in that specifics zone. Devices can be members of more than
+   one zone.</p>
 
 <p>Zones are useful when you want to read aggregated data from devices, or when you want
-to perform specific operation on all devices that the zone manages.</p>
+   to perform specific operation on all devices that the zone manages.</p>
 
-<p><a href='#example_implementation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='example_implementation'>Example implementation</h2>
-<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">MyZone</span><span class="p">:</span> <span class="kt">ZoneType</span> <span class="p">{</span>
-   <span class="k">var</span> <span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span>
-   <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
-   <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
-   <span class="k">var</span> <span class="nv">devices</span> <span class="o">=</span> <span class="p">[</span><span class="kt">DeviceType</span><span class="p">]</span></p>
+<p>### Example implementation of the protocol</p>
 
-<p><span class="nf">init</span><span class="p">(</span><span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">devices</span><span class="p">:</span> <span class="kt">DeviceType</span><span class="o">...</span> <span class="p">{</span>
-       <span class="k">self</span><span class="o">.</span><span class="n">zoneID</span> <span class="o">=</span> <span class="n">zoneID</span>
-       <span class="k">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-       <span class="k">self</span><span class="o">.</span><span class="n">devices</span> <span class="o">=</span> <span class="n">devices</span>
+<pre class="highlight swift"><code>   <span class="kd">struct</span> <span class="kt">MyZone</span><span class="p">:</span> <span class="kt">ZoneType</span> <span class="p">{</span>
+       <span class="k">var</span> <span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span>
+       <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+       <span class="k">var</span> <span class="nv">creationDate</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span>
+       <span class="k">var</span> <span class="nv">devices</span> <span class="o">=</span> <span class="p">[</span><span class="kt">DeviceType</span><span class="p">]</span>
+
+       <span class="nf">init</span><span class="p">(</span><span class="nv">zoneID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">devices</span><span class="p">:</span> <span class="kt">DeviceType</span><span class="o">...</span><span class="p">)</span> <span class="p">{</span>
+           <span class="k">self</span><span class="o">.</span><span class="n">zoneID</span> <span class="o">=</span> <span class="n">zoneID</span>
+           <span class="k">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+           <span class="k">self</span><span class="o">.</span><span class="n">devices</span> <span class="o">=</span> <span class="n">devices</span>
+       <span class="p">}</span>
    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></p>
+</code></pre>
 
           </div>
         </section>
@@ -203,7 +204,7 @@ to perform specific operation on all devices that the zone manages.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L43">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L41">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -233,7 +234,7 @@ to perform specific operation on all devices that the zone manages.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L46">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L44">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -263,7 +264,7 @@ to perform specific operation on all devices that the zone manages.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L49">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L47">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -293,7 +294,7 @@ to perform specific operation on all devices that the zone manages.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L52">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L50">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -305,9 +306,9 @@ to perform specific operation on all devices that the zone manages.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:veRq_10CoreCityOS8ZoneType_S_S0_9deviceIDsGVSs3SetSS_"></a>
+                    <a name="/s:vE10CoreCityOSPS_8ZoneType9deviceIDsGVs3SetSS_"></a>
                     <a name="//apple_ref/swift/Property/deviceIDs" class="dashAnchor"></a>
-                    <a class="token" href="#/s:veRq_10CoreCityOS8ZoneType_S_S0_9deviceIDsGVSs3SetSS_">deviceIDs</a>
+                    <a class="token" href="#/s:vE10CoreCityOSPS_8ZoneType9deviceIDsGVs3SetSS_">deviceIDs</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -330,7 +331,7 @@ to perform specific operation on all devices that the zone manages.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L58-L61">Show on GitHub</a>
+                        <a href="https://github.com/cityos/CoreCityOS/tree/master/CoreCityOS/Sources/ZoneType.swift#L56-L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -343,7 +344,7 @@ to perform specific operation on all devices that the zone manages.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-02-09)</p>
+      <p>&copy; 2016 <a class="link" href="http://cityos.io" target="_blank" rel="external">CityOS</a>. All rights reserved. (Last updated: 2016-03-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
