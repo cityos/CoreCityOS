@@ -40,3 +40,21 @@ public protocol DeviceType {
     var dataCollection: LiveDataCollectionType { get set }
     
 }
+
+extension DeviceType {
+    
+    public subscript (type: DataType) -> LiveDataType? {
+        get {
+            return dataCollection.allReadings
+                .filter { $0.type.dataIdentifier == type.dataIdentifier }
+                .first
+        }
+        
+        set {
+            let index = dataCollection.allReadings.indexOf { $0.type.dataIdentifier == type.dataIdentifier }
+            if let index = index {
+                dataCollection.allReadings[index] = newValue!
+            }
+        }
+    }
+}
