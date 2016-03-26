@@ -41,6 +41,7 @@ public protocol DeviceType {
     
 }
 
+//MARK: Subscript methods
 extension DeviceType {
     
     public subscript (type: DataType) -> LiveDataType? {
@@ -56,5 +57,17 @@ extension DeviceType {
                 dataCollection.allReadings[index] = newValue!
             }
         }
+    }
+}
+
+//MARK: CustomStringConvertible implementation
+extension DeviceType {
+    
+    public var description: String {
+        return "ID: \(deviceData.deviceID)\nLocation: \(location),\nData: \(dataCollection.dataTypes)"
+    }
+    
+    public var debugDescription: String {
+        return "\(deviceData.description)\nLocation: \(location),\nData: \(dataCollection.dataTypes)"
     }
 }

@@ -8,13 +8,13 @@ OSX_SCHEME="CoreCityOS OSX"
 IOS_SCHEME="CoreCityOS iOS"
 TVOS_SCHEME="CoreCityOS tvOS"
 
-IOS_SDK="iphonesimulator9.2"
+IOS_SDK="iphonesimulator9.3"
 OSX_SDK="macosx10.11"
-TVOS_SDK="appletvsimulator9.1"
+TVOS_SDK="appletvsimulator9.2"
 
-IOS_DESTINATION="OS=9.2,name=iPhone 6S Plus"
+IOS_DESTINATION="OS=9.3,name=iPhone 6S Plus"
 OSX_DESTINATION="arch=x86_64"
-TVOS_DESTINATION="OS=9.1,name=Apple TV 1080p"
+TVOS_DESTINATION="OS=9.2,name=Apple TV 1080p"
 
 usage() {
 cat <<EOF

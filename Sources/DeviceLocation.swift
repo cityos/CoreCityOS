@@ -33,6 +33,22 @@ public class DeviceLocation {
     }
 }
 
+//MARK: CustomStringConvertible implementation
+
+extension DeviceLocation: CustomStringConvertible {
+    public var description: String {
+        return "[\(latitude), \(longitude)]"
+    }
+}
+
+extension DeviceLocation: CustomDebugStringConvertible {
+    public var debugDescription: String {
+        return "[latitude: \(latitude), longitude: \(longitude)]"
+    }
+}
+
+//MARK: Apple platform extensions
+
 #if os(iOS) || os(tvOS) || os(OSX)
     import CoreLocation
     

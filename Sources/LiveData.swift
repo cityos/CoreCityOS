@@ -37,3 +37,6 @@ public struct LiveData: LiveDataType {
             self.type = type
     }
 }
+
+extension LiveData: CustomStringConvertible, CustomDebugStringConvertible {
+}

@@ -55,3 +55,9 @@ extension DeviceData : Equatable {
 public func == (lhs: DeviceData, rhs: DeviceData) -> Bool {
     return lhs.deviceID == rhs.deviceID
 }
+
+extension DeviceData {
+    public var description: String {
+        return "Device:\n--- \nID: \(deviceID) \nModel: \(model ?? "Not specified")\nVersion: \(version ?? "Not specified")\nAdditional info: \(deviceInfo ?? [:])"
+    }
+}

@@ -82,3 +82,13 @@ public func <~ <T: LiveDataType>(inout lhs: T, rhs: [DataPoint]) {
         lhs.addDataPoint(dataPoint)
     }
 }
+
+extension LiveDataType {
+    public var description: String {
+        return "Type: \(type) - \(dataPoints[0])"
+    }
+    
+    public var debugDescription: String {
+        return "Type: \(type), JSON key: \(jsonKey), Data points: \(dataPoints)"
+    }
+}

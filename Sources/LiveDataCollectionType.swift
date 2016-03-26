@@ -104,13 +104,29 @@ extension LiveDataCollectionType {
     }
 }
 
-//MARK: Custom String Convertible implementation
+extension LiveDataCollectionType {
+    
+    /**
+     Returns set of plain text data types that the data collection handles.
+     
+     For example: `["Temperature", "Humidity", "Noise"]`
+    */
+    public var dataTypes: Set<String> {
+        return Set<String>(allReadings.map { $0.type.dataIdentifier })
+    }
+}
+
+//MARK: CustomStringConvertible implementation
 
 /*
     Since there is no way 
 */
 extension LiveDataCollectionType {
-    var description: String {
-        return "tesr"
+    public var description: String {
+        return allReadings.description
+    }
+    
+    public var debugDescription: String {
+        return allReadings.debugDescription
     }
 }

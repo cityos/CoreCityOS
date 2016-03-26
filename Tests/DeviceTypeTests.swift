@@ -7,29 +7,37 @@
 //
 
 import XCTest
+@testable import CoreCityOS
+
+/// Test device
+internal class TestDevice: DeviceType {
+    var deviceData = DeviceData(deviceID: "12345")
+    var creationDate: NSDate? = NSDate()
+    var location: DeviceLocation? = DeviceLocation(latitude: 12.5785, longitude: 25.32636)
+    var dataCollection: LiveDataCollectionType = TestDataCollection()
+}
 
 class DeviceTypeTests: XCTestCase {
     
+    var device: TestDevice!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        device = TestDevice()
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testSubscriptsGet() {
+        let temperature = device[.Temperature]
+        
+        XCTAssert(temperature != nil, "Temperature property should exist")
+        XCTAssert(temperature?.jsonKey == "temp", "Temperature property should have temp json key")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSubscriptSet() {
+        device[.Temperature]?.addDataPoint(DataPoint(value: 20))
+        device[.Temperature]?.addDataPoint(DataPoint(value: 40))
+        
+        XCTAssert(device[.Temperature]?.currentDataPoint?.value == 40, "Current data point should be equal to 20")
+        XCTAssert(device[.Temperature]?.dataPoints.count == 2, "Data points count should be 2")
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

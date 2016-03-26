@@ -58,10 +58,10 @@ public struct DataType {
     public static let CarbonDioxide = DataType(dataIdentifier: "Carbon Dioxide")
     
     /// Particulate 2.5 matter data type
-    public static let ParticleMatter25 = DataType(dataIdentifier: "PM 2.5 particles")
+    public static let ParticulateMatter25 = DataType(dataIdentifier: "PM 2.5 particles")
     
     /// Particulate 10 matter data type
-    public static let ParticleMatter10 = DataType(dataIdentifier: "PM 10 particles")
+    public static let ParticulateMatter10 = DataType(dataIdentifier: "PM 10 particles")
     
     /// Noise data type
     public static let Noise = DataType(dataIdentifier: "Noise")
@@ -73,4 +73,11 @@ extension DataType : Equatable {
 
 public func == (lhs: DataType, rhs: DataType) -> Bool {
     return lhs.dataIdentifier == rhs.dataIdentifier
+}
+
+//MARK: Custom String Convertible implementation
+extension DataType: CustomStringConvertible {
+    public var description: String {
+        return dataIdentifier
+    }
 }
