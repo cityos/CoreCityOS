@@ -25,6 +25,12 @@ public protocol LiveDataType {
     
     /// Holds all readings for data type
     var dataPoints: [DataPoint] { get set }
+    
+    /// Minimum threshold value
+    var minimumValue: Double? { get set }
+    
+    /// Maxium treshold value
+    var maximumValue: Double? { get set }
 }
 
 extension LiveDataType {
