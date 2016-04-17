@@ -29,6 +29,9 @@ public protocol DeviceType {
     /// This property is used to store device ID info, such as `Schema ID` or `Model ID`
     var deviceData: DeviceData { get set }
     
+    /// Device name (optional)
+    var name: String? { get set }
+    
     /// Creation date of the device
     var creationDate: NSDate? { get set }
     

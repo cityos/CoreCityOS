@@ -12,6 +12,7 @@ import XCTest
 /// Test device
 internal class TestDevice: DeviceType {
     var deviceData = DeviceData(deviceID: "12345")
+    var name: String? = "Test Device"
     var creationDate: NSDate? = NSDate()
     var location: DeviceLocation? = DeviceLocation(latitude: 12.5785, longitude: 25.32636)
     var dataCollection: LiveDataCollectionType = TestDataCollection()
