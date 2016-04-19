@@ -61,3 +61,16 @@ extension DeviceData {
         return "Device:\n--- \nID: \(deviceID) \nModel: \(model ?? "Not specified")\nVersion: \(version ?? "Not specified")\nAdditional info: \(deviceInfo ?? [:])"
     }
 }
+
+//MARK: Subscript extensions for DeviceData structure
+extension DeviceData {
+    public subscript(key: String) -> AnyObject? {
+        get {
+            return deviceInfo[key]
+        }
+        
+        set {
+            deviceInfo[key] = newValue
+        }
+    }
+}

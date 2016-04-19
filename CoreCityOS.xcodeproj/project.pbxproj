@@ -58,6 +58,9 @@
 		B3B522801CA596B300784C5A /* DeviceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5227F1CA596B300784C5A /* DeviceTypeTests.swift */; };
 		B3B522811CA596B300784C5A /* DeviceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5227F1CA596B300784C5A /* DeviceTypeTests.swift */; };
 		B3B522821CA596B300784C5A /* DeviceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5227F1CA596B300784C5A /* DeviceTypeTests.swift */; };
+		B3FAC2141CC656740066270C /* DeviceDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FAC2131CC656740066270C /* DeviceDataTests.swift */; };
+		B3FAC2151CC656740066270C /* DeviceDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FAC2131CC656740066270C /* DeviceDataTests.swift */; };
+		B3FAC2161CC656740066270C /* DeviceDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FAC2131CC656740066270C /* DeviceDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,7 @@
 		51D6DE781C596A19004BFE89 /* SerializerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializerError.swift; sourceTree = "<group>"; };
 		B315A1541CA1F529002D0284 /* CoreCityOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CoreCityOS.playground; sourceTree = "<group>"; };
 		B3B5227F1CA596B300784C5A /* DeviceTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTypeTests.swift; sourceTree = "<group>"; };
+		B3FAC2131CC656740066270C /* DeviceDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 			children = (
 				517406C41C426DF200815AF0 /* Info.plist */,
 				517406C21C426DF200815AF0 /* DataPointTests.swift */,
+				B3FAC2131CC656740066270C /* DeviceDataTests.swift */,
 				B3B5227F1CA596B300784C5A /* DeviceTypeTests.swift */,
 				51D525E61C4FB145005E4890 /* LiveDataCollectionTests.swift */,
 				518781891C48F71600C8B962 /* LiveDataTypeTests.swift */,
@@ -512,6 +517,7 @@
 			files = (
 				514A8FB31C48270E008EAD30 /* DataPointTests.swift in Sources */,
 				B3B522811CA596B300784C5A /* DeviceTypeTests.swift in Sources */,
+				B3FAC2151CC656740066270C /* DeviceDataTests.swift in Sources */,
 				5187818B1C48F71600C8B962 /* LiveDataTypeTests.swift in Sources */,
 				51D525E81C4FB16F005E4890 /* LiveDataCollectionTests.swift in Sources */,
 			);
@@ -541,6 +547,7 @@
 			files = (
 				517406C31C426DF200815AF0 /* DataPointTests.swift in Sources */,
 				B3B522801CA596B300784C5A /* DeviceTypeTests.swift in Sources */,
+				B3FAC2141CC656740066270C /* DeviceDataTests.swift in Sources */,
 				5187818A1C48F71600C8B962 /* LiveDataTypeTests.swift in Sources */,
 				51D525E71C4FB145005E4890 /* LiveDataCollectionTests.swift in Sources */,
 			);
@@ -570,6 +577,7 @@
 			files = (
 				518781851C48480B00C8B962 /* DataPointTests.swift in Sources */,
 				B3B522821CA596B300784C5A /* DeviceTypeTests.swift in Sources */,
+				B3FAC2161CC656740066270C /* DeviceDataTests.swift in Sources */,
 				5187818C1C48F71600C8B962 /* LiveDataTypeTests.swift in Sources */,
 				51D525E91C4FB170005E4890 /* LiveDataCollectionTests.swift in Sources */,
 			);
