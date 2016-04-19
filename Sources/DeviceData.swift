@@ -33,14 +33,14 @@ public struct DeviceData {
     public var version: String?
     
     /// Provides additional object for storing any device specific info
-    public var deviceInfo: [String: AnyObject]?
+    public var deviceInfo: [String: AnyObject]
     
     /// Creates `DeviceData`
     public init(deviceID: String,
         model: String? = nil,
         schema: String? = nil,
         version: String? = nil,
-        deviceInfo info: [String: AnyObject]? = nil) {
+        deviceInfo info: [String: AnyObject] = [:]) {
             self.deviceID = deviceID
             self.model = model
             self.schema = schema
