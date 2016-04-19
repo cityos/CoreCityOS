@@ -33,7 +33,7 @@ public protocol DeviceType {
     var name: String? { get set }
     
     /// Creation date of the device
-    var creationDate: NSDate? { get set }
+    var creationDate: NSDate? { get }
     
     /// Device location
     var location: DeviceLocation? { get }
