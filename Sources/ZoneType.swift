@@ -47,7 +47,7 @@ public protocol ZoneType {
     var creationDate: NSDate? { get }
     
     /// All devices that zone manages
-    var devices: [DeviceType] { get set }
+    var devices: [DeviceType] { get }
 }
 
 extension ZoneType {
