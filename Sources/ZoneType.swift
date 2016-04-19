@@ -48,6 +48,9 @@ public protocol ZoneType {
     
     /// All devices that zone manages
     var devices: [DeviceType] { get }
+    
+    /// Additional dictionary that is used to store arbitary zone data
+    var zoneInfo: [String: AnyObject] { get }
 }
 
 extension ZoneType {
