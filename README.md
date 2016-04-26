@@ -7,6 +7,7 @@ CoreCityOS framework is designed as an CityOS open-source data format standard i
 ## Contents:
 1. [Installation](#installation)
 2. [Usage](#usage)
+3. [Tutorials](#tutorials)
 3. [Contributing](#contributing)
 4. [Licence](#licence)
 
@@ -64,3 +65,7 @@ After you have added CoreCityOS by any of the supported methods you can import i
 ```swift
 import CoreCityOS
 ```
+
+## Tutorials
+* CoreCityOS basic tutorial on data structures and protocols [Link](http://cityos.io/tutorial/1914/CoreCityOS-Framework-Tutorial)
+* How to create your own IOT framework using CoreCityOS as base framework [Link] (http://cityos.io/tutorial/1924/Create-framework-for-communication-with-IoT-devices)
